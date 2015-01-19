@@ -2504,6 +2504,7 @@ color:#4d6a82;
 @media (min-width: 0px) and (max-width: 768px) {
 
   #ftrslist-section .ftr-padding
+  {
     padding-bottom: 25px;
   }
 }
