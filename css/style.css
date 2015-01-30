@@ -2844,6 +2844,11 @@ font-size: 22px;*/
    color: white;
    height: 58px !important;
 }
+.btn-form:hover
+{
+	background-color: white;
+	color: #0a3153;
+}
 #frm-btm-btn
 {
   margin-bottom: -70px;
