@@ -61,8 +61,9 @@
 		{
 			if(msg=='OK'){
 	        		// all went well, data was saved to infusion
-	        		//we can redirect to '/prices.html?region=' + reg1
+	        		//we can redirect to '/prices.html?region=' + reg1				
 				alert('Yes, the data was sent');
+				window.location.href="daocloud.com/prices.html?region="+reg1;
 			}
 			else {
 				//something went wrong
@@ -104,6 +105,7 @@
 	        		// all went well, data was saved to infusion
 	        		//we can redirect to '/prices.html?region=' + reg1
 	         		alert('Yes, the data was sent');
+				window.location.href="daocloud.com/prices.html?region="+reg1;
 			}
 			else {
 				//something went wrong
