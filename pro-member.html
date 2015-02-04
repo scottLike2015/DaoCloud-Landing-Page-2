@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>DaoClould</title>
+        <title>DaoCloud</title>
         <!-- General META -->
         <meta charset="utf-8">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -24,11 +24,12 @@
         <meta property="og:type" content="website">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link rel="shortcut icon" type"image/x-icon" href="images/daocloud-favicon.ico">
         <!-- CSS Imports -->
         <link rel="stylesheet" href="css/style.css">
         <!--<link rel="stylesheet" href="css/bootstap/bootstrap.css">-->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+	
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -37,6 +38,35 @@
             console.log("JQuery works!!!");
         });     
         </script>
+	<script>
+	$(document).ready(function() {
+	    function close_accordion_section() {
+	        $('.accordion .accordion-section-title').removeClass('active');
+	        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+	    }
+ 
+	    $('.accordion-section-title').click(function(e) {
+	        // Grab current anchor value
+	        var currentAttrValue = $(this).attr('href');
+ 
+	        if($(e.target).is('.active')) {
+			
+	            close_accordion_section();
+		    
+	        }else {
+			
+	            close_accordion_section();
+ 
+	            // Add active class to section title
+	            $(this).addClass('active');
+	            // Open up the hidden content panel
+	            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+	        }
+ 
+	        e.preventDefault();
+	    });
+	});
+	</script>
     </head>
     <body>
         <!-- Standard button -->
@@ -73,17 +103,17 @@
             </nav>
         </div>
         </header> 
-       <div class="content-wrapper">
+       <div id="propage" class="content-wrapper">
         <section id="pro-row1-section" class="section">
             <div class="container">
                 <div class="row">
                     <div id="signup-row"class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                                 <div class="pro-signup-wrapper">
-                                    <h1>A New Hirizon for Your Business</h2>
+                                    <h1>A New Horizon for Your Business</h2>
                                     <h3 class="sec-subtitle"> Network with the Wellness Community and Discover New Clients </h3>
-                                    <buttons class="btn btn-gh">
+                                    <button class="btn btn-gh">
                                                 View Price & Sign Up
-                                    </buttons> 
+                                    </button> 
                                 </div> 
                     </div>
                 </div>
@@ -97,7 +127,7 @@
                                     <div class="ftrslist-content">
                                         <img class="ftr-list-img " src="images/propage-icon-bullhorn.svg">
                                         <div class="ftr-list-txt">
-                                            Amplify Word-of-Mouth
+                                            Amplify <br>Word-of-Mouth
                                         </div>
                                     </div>
                                 </div> 
@@ -183,7 +213,7 @@
         </section>
         <section id="row6-section" class="section border-sec">
         <div class="container">
-                <div class="row " style="margin-left: 50px;">
+                <div class="row " >
                     <div id="ntwrk-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
                             <h1>Amplify Word of Mouth</h1>
                             <h3 class="sec-subtitle">Connect Directly with Your Vlient's Network</h3>
@@ -193,8 +223,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+ 
         </section>
         <section id="row7-section" class="section border-sec">
         <div class="container">
@@ -215,38 +244,45 @@
                     <div id="ntwrk-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
                             <h1>Ready to Join the Best Wellness Community?</h1>
                             <h3 class="sec-subtitle">Just enter your name and email to get started</h3>
-                            </div>
-                </div>
+                            </div><!-- col-->
+                </div><!-- row-->
                 <div class="div row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 btn-long">
                         <div class="scrb-frm-ctr scrb-btn-ctr">
                             <span class="btn btn-row btn-wh elem-wrapper">Check Availabilty & Pricing in Your Region</span>
-                        </div> 
-                  </div>
-                </div> 
-            </div>
-            </div>
+                        </div>  <!-- -subsc btn -->
+                  </div><!-- col -->
+                </div> <!-- row -->
+            </div><!-- container -->
         </section>
         <section id="row9-section" class="section border-sec">
         <div class="container">
                 <div class="row">
-                    <div id="ntwrk-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                    <div id="ntwrk-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12 ">
+			    <div class="clearfix">
                                 <h1>Still Have Questions About Daocloud?</h1>
                                 <h3 class="sec-subtitle">Read through our Frequently Asked Questions</h3>
-                                <div class="qas-wrapper">
-                                    <div class="qa-container">
-                                        <h1 class ="q-header">Question 1</h1>
-                                        <h3 class="q-answer">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</h3>
+			</div>
+                                <div class="qas-wrapper accordion elem-wrapper">
+                                    <div class="qa-container accordion-section">
+                                        <h1 class ="q-header accordion-section-title" href="#accordion-1">Question 1</h1>
+                                        <div  id="accordion-1"  class="q-answer accordion-section-content ">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</div>
                                     </div>
-                                    <div class="qa-container">
-                                        <h1 class ="q-header">Question 2</h1>
-                                        <h3 class="q-answer">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc</h3>
+                                    <div class="qa-container accordion-section">
+                                        <h1 class ="q-header accordion-section-title" href="#accordion-2">Question 2</h1>
+                                        <div id="accordion-2" class="q-answer accordion-section-content ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </div>
                                     </div>
+                                    <div class="qa-container accordion-section">
+                                        <h1 class ="q-header accordion-section-title" href="#accordion-3">Question 3</h1>
+                                        <div id="accordion-3" class="q-answer accordion-section-content ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </div>
+                                    </div>
+	
                                 </div>
                     </div>
                 </div>
+		
                 <div class="div row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 btn-long col-xs-offset-3">
                         <div class="scrb-frm-ctr scrb-btn-ctr">
                             <span class="btn btn-row btn-wh elem-wrapper">Check Availabilty & Pricing in Your Region to Sign Up</span>
                         </div> 
@@ -254,6 +290,7 @@
                 </div> 
             </div>
         </section>
+	 </div>
         <footer id="footer" class="section">
             <div class="container">
                 <div class="row">
@@ -269,9 +306,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+   
         </footer>
-        </div>
+       
     </body>
 </html>

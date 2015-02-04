@@ -2279,7 +2279,7 @@ h1 {
 h2 {
   font-size: 2vw; }
 
-h3, .accordion-section-content{
+h3 {
   font-size: 1.75vw; }
 
 h1, h2, h3, h4, span,p {
@@ -2334,10 +2334,7 @@ section
 /************************ Button/Links Styles ************************ */
   .elem-wrapper {
     margin: 20px auto; }
-    button
-    {
-	background-color: inherit;
-    }
+
 
 .btn {
   border: 2px solid white;
@@ -2380,26 +2377,7 @@ section
   .btn:hover, input[type="submit"]:hover {
   
   }
-  @media (min-width: 500px) and (max-width: 1150px)
-  {
-  .btn-long
-  {
-	  float: none;
-	  width: 70%;
-	  margin: 0 auto;
-	  min-width: 149px;
-  }
-}
-  @media (min-width: 0px) and (max-width: 500px)
-  {
-  .btn-long
-  {
-	  float: none;
-	  width: 75%;
-	  margin: 0 auto;
-	  min-width: 149px;
-  }
-}
+
 input[type="submit"] {
   line-height: 3px; }
 
@@ -2422,11 +2400,6 @@ label {
 
 /********************************************************** */
 /********************** Header Styles ********************* */
-  header img
-  {
-	  width: 155px;
-	  margin-top: 4px;
-  }
 header.navbar {
   min-height: 40px !important; 
   background-color: white;
@@ -2549,32 +2522,11 @@ background-color: #ddd;
   color: white;
    }
    #pro-row1-section {
-	   background: url("../images/pro-page-modern.jpg") no-repeat;
-	   /*height: 32vw;*/
-	   color: white;
-	   background-size: contain;
-	   overflow: visible;
-	   padding: 0px;
+     background: url("../images/pro-page-modern.jpg") no-repeat;
+     /*height: 42.25vw;*/
+     background-size: contain;
+     color: white;
       }
-    #pro-row1-section .container
-    {
-	    height: 32vw;
-	    text-align: center;  /* align the inline(-block) elements horizontally */
-	    font: 0/0 a;         /* remove the gap between inline(-block) elements */
-    }
-   
-    #pro-row1-section .container:before {    /* create a full-height inline block pseudo=element */
-        content: ' ';
-        display: inline-block;
-        vertical-align: middle;  /* vertical alignment of the inline element */
-        height: 100%;
-    }
-    #pro-row1-section .container .row {
-	    display: inline-block;
-	    vertical-align: middle;
-	    font-family: Raleway;
-	    line-height: 1;      /* <-- reset the font property */
-    }
    #pro-row1-section #signup-row
    {
    	height: auto;
@@ -2582,8 +2534,7 @@ background-color: #ddd;
 
    .pro-signup-wrapper
    {
-    /* padding: 7.25vw 0px; */
-    /* padding: 9.8vw 0px;*/
+    padding: 7.25vw 0px;
    }
 #signup-row  h1, #signup-row  h2, #signup-row  h3, #signup-row h4, #signup-row span, #signup-row  button
 {
@@ -2618,79 +2569,6 @@ background-color: #ddd;
     float: left; }
   .scrolldown-txt span:nth-of-type(2) {
     float: right; }
-
-
-    @media (max-width: 500px) {
-
-	    #pro-row1-section {
-	    background: url("../images/pro-page-modern.jpg") no-repeat;
-	    background-size: cover;
-	    }
-
-	    #propage h1
-	    {
-		 font-size: 15px;
-		 line-height: 1.4;
-	    }
-	    #propage h3, .accordion-section-content
-	    {
-		 font-size: 12px;
-		 line-height: 1.4;
-		   
-	    }
-	    #propage #signup-row .btn
-	    {
-		    font-size: 10px;
-		    width: 100%;
-	    }
-
-		    
-    }
-    @media (min-width: 350px) and (max-width: 500px)	
-    {    
-    	#pro-row1-section .container
-    	{
-	    height: 55vw;
-    	}
-    }
-    @media (min-width: 200px) and (max-width: 350px)	
-    {
-	    header img
-	    {
-	   	width: 49vw;
-	    	max-width: 144px;
-	    	min-width: 98px;
-	    	margin-top: 5%;
-	    }
-    
-        #pro-row1-section .container
-       	{
-  		 height: 77vw;
-       }
-    }
-    @media (max-width: 200px) 
-    {
-	    .navbar-brand > img
-	    {
-	    	display: none;
-	    }
-
-    }
-    @media (min-width: 150px) and (max-width: 200px)
-    {
-    #pro-row1-section .container
-   	{
-	 height: 100vw;
-       }
-   }
-    @media (min-width: 0px) and (max-width: 150px)
-    {
-         #pro-row1-section .container
-   	{
-	   height: 150vw;
-        }
-   }
-    
 
 /******************* MemberFeatures List Section Styles ******************** */
 
@@ -2786,32 +2664,12 @@ background-color: #ddd;
   {
     padding-bottom: 25px;
   }
-  
-  .ftr-list-txt
-  {
-	  text-align: center;
-  }
 
   .icon-person-txt, .icon-person-wrapper
   {
     display: block;
     text-align:center;
   }
-}
-
-@media (min-width: 300px) and (max-width:1200px)
-{
-	.ftr-list-img 
-	{
-		margin-left: 30px;
-	}
-}
-@media (max-width: 550px)
-{
-   .ftr-list-txt
-   {
-	   font-size: 13px;
-   }
 }
    @media (max-width: 480px) {
       footer .footer-links {
@@ -2820,17 +2678,7 @@ background-color: #ddd;
 
          }
 
-@media (min-width:0 ) and (max-width: 300px) 
-{
-	.ftrslist-content {
-	width: auto;
-	}
-	.ftr-padding
-	{
-		padding: 0px;
-	}
-	
-}
+
 /********************************************************************* */
 /*padding: 16px 0px;
 font-size: 22px;*/
@@ -2894,13 +2742,26 @@ font-size: 22px;*/
 {
   text-align: left;
 }
-
+.q-header{
+  margin-bottom: 20px;
+}
 .q-answer
 {
   font-weight: normal;
 }
-
-
+.qas-wrapper
+{
+  margin: 55px 0px;
+}
+.qa-container
+{
+  margin-bottom: 45px;
+}
+.qa-container .q-answer
+{
+	font-size: 1.75vw;
+	line-height: 2.3vw;
+}
 
 
 
@@ -2935,56 +2796,6 @@ font-size: 22px;*/
       text-align: center; }
   #sbscrb-row .scrb-btn-ctr {
     width: 82%; }
-
-
-/************************************************************* */
-/******************** Pro Page Page Sytles ******************** */
-
-/******************** Pro Page Page Questions ******************** */
-    /*----- Accordion -----*/
-    .accordion, .accordion * {
-        -webkit-box-sizing:border-box; 
-        -moz-box-sizing:border-box; 
-        box-sizing:border-box;
-    }
- 
-    .accordion {
-        overflow:hidden;
-        box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-        border-radius:3px;
-
-    }
- 
-    /*----- Section Titles -----*/
-    .accordion-section-title {
-	    width: 100%;
-	    padding: 15px;
-	    display: inline-block;
-	    border-bottom: 1px solid #0a3153;
-	    margin: 0;
-	    transition: all .1s linear;
-    }
- 
-    .accordion-section-title.active, .accordion-section-title:hover {
-	    background: #0a3153;
-	    color: white;
-    }
- 
-    .accordion-section:last-child .accordion-section-title {
-        border-bottom:none;
-    }
- 
-    /*----- Section Content -----*/
-    .accordion-section-content {
-        padding:15px;
-        display:none;
-	border-bottom: 1px solid #0a3153;
-    }
-    .accordion-section:last-child .accordion-section-content
-    {
-	 border-bottom: none;   
-    }
-
 
 
 /************************************************************* */
@@ -3268,7 +3079,7 @@ font-size: 22px;*/
     font-size: 20px;
     line-height: 19px; }
 
-  h3, {
+  h3,.qa-container .q-answer {
     font-size: 17px;
     line-height: 21px; }
     
@@ -3308,7 +3119,7 @@ font-size: 22px;*/
 @media (min-width: 0px) and (max-width: 480px) {
   .pro-signup-wrapper
   {
-    /*padding: 0px;*/
+    padding: 0px;
   }
   #signup-row {
     text-align: center; }

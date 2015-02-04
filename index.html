@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>DaoClould</title>
+        <title>DaoCloud</title>
         <!-- General META -->
         <meta charset="utf-8">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -24,7 +24,7 @@
         <meta property="og:type" content="website">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link rel="shortcut icon" type"image/x-icon" href="images/daocloud-favicon.ico">        
         <!-- CSS Imports -->
         <link rel="stylesheet" href="css/style.css">
         <!--<link rel="stylesheet" href="css/bootstap/bootstrap.css">-->
@@ -37,6 +37,32 @@
             console.log("JQuery works!!!");
         });     
         </script>
+	<script>
+	$(document).ready(function() {
+	    function close_accordion_section() {
+	        $('.accordion .accordion-section-title').removeClass('active');
+	        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+	    }
+ 
+	    $('.accordion-section-title').click(function(e) {
+	        // Grab current anchor value
+	        var currentAttrValue = $(this).attr('href');
+ 
+	        if($(e.target).is('.active')) {
+	            close_accordion_section();
+	        }else {
+	            close_accordion_section();
+ 
+	            // Add active class to section title
+	            $(this).addClass('active');
+	            // Open up the hidden content panel
+	            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+	        }
+ 
+	        e.preventDefault();
+	    });
+	});
+	</script>
     </head>
     <body>
         <!-- Standard button -->
@@ -51,7 +77,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a data-ng-click="goHome()" href="/" class="navbar-brand">
-                    <img width="155" data-ng-src="images/dao_logo.png" alt="dao logo" src="images/dao_logo.png">
+                    <img data-ng-src="images/dao_logo.png" alt="dao logo" src="images/dao_logo.png">
                 </a>
             </div>
             <nav id="daocload-nav" class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation" style="height: 0px;">
@@ -79,7 +105,7 @@
                         <div class="row">
                            <div id="signup-row" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                                 <h1>Come Connect with the Social <br class="visible-xs"> Wellness Network</h2>
-                                <h3 class="sec-subtitle"> Find & share resources that can improve your health </h3>
+                                <h3 class="sec-subtitle"> Find & share trusted resources that can improve your health </h3>
 
                                 <buttons class="btn btn-gh">
                                             Sign Up for Free
@@ -98,7 +124,7 @@
                                     <div class="ftrslist-content">
                                         <img class="ftr-list-img" src="images/contacts.svg">
                                         <div class="ftr-list-txt">
-                                            Discover and Share<br> Healthy Resources
+                                            Build and Share<br> your Wellness Profile
                                         </div>
                                     </div>
                                 </div> 
@@ -106,7 +132,7 @@
                                     <div class="ftrslist-content"> 
                                         <img class="ftr-list-img" src="images/friends.svg">
                                         <div class="ftr-list-txt">
-                                            Learn<br> with the Community
+                                            Get Inspiration<br> from the Community
                                         </div>
                                     </div>
                                 </div> 
@@ -152,8 +178,8 @@
         <div class="container">
                 <div class="row">
                     <div id="ntwrk-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
-                            <h1> Learn with the Community</h1>
-                            <h3 class="sec-subtitle">Find Friends, View Friends Profiles & Create New Connections</h3>
+                            <h1>Learn with the Community</h1>
+                            <h3 class="sec-subtitle">Connect With Friends, View Their Profiles & Create New Connections</h3>
                                 <div class="scrnsht">
                                     <img class="img-responsive" src="images/hp-memnetwork.jpg" alt="">
                                 </div>
