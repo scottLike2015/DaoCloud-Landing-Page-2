@@ -2301,7 +2301,16 @@ h1, h2, h3, h4, span,p {
   {
   margin-top: 50px;
   }
-
+  
+  @media (max-width: 768px)
+ {
+	 h3, .btn-form
+  	{
+ 	       font-size: 12px !important;
+ 	      line-height: 1.4;
+   
+  }
+}
 /**************************************************************** */
 /******************* Section CSS Styles ************************* */
 section h1,h2,h3, h4{
@@ -3057,10 +3066,14 @@ font-size: 22px;*/
 .btn-form
 {
    background-color: #0a3153;
-   font-size: 1.75vw !important;
+   font-size: 1.75vw ;
    font-weight: 600; 
    color: white;
    height: 58px !important;
+}
+.btn-form h3
+{
+	font-weight: normal;
 }
 #frm-btm-btn
 {
@@ -3245,10 +3258,13 @@ c
 {
 	padding-bottom: 4vw;
 	display: block;
-	width: 100%;
-	
+	width: 100%;	
 }
 
+#pricing-row3-section .inner-container >div:first-child img:last-child
+{
+	padding-bottom: 0px;
+}
 
 .infog-txt
 {
@@ -3268,6 +3284,29 @@ c
 	width: 23%;	
 	margin: 0 auto;
 	display: block;
+}
+
+.single-title
+{
+	margin: 45px auto;
+}
+
+
+@media (min-width: 550px)
+{
+
+	#pricing-row3-section .inner-container
+	{
+		width: 51vw;
+	}
+	.info-col
+	{
+		width: 17vw;
+	}
+	.infog-txt
+	{
+		padding-bottom: 6vw;
+	}
 }
 @media (min-width: 0px) and (max-width: 550px)
 {
@@ -3303,9 +3342,21 @@ c
 		margin: 0 auto;
 		display: block;
 	}
+	element.style {
+	}
+	#pricing-row3-section .inner-container >div:first-child img {
+		padding-bottom: 12vw;
+	}
 	
 }
-@media (min-width: 0px) and (max-width: 300px) 
+@media (max-width: 300px) 
+{
+.infog-txt
+{
+	font-size: 10px;
+}
+}
+@media (min-width: 215px) and (max-width: 300px) 
 {
 	#pricing-row3-section .inner-container
 	{
@@ -3319,10 +3370,6 @@ c
 	}
 
 
-	.infog-txt
-	{
-		font-size: 5.25vw;
-	}
 	.arrowg
 	{
 		padding-top: 5vw;
@@ -3333,12 +3380,51 @@ c
 		width: 56%;	
 
 	}
+	.infog-txt
+	{
+		font-size: 5vw; 
+	}
 	
 }
-#pricing-row3-section div
+@media (min-width: 170px) and (max-width: 215px) 
 {
-	/*border: 1px solid black;*/
+	.arrowg img
+	{
+		width: 56%;	
+
+	}
+	#pricing-row3-section .inner-container >div:first-child img
+	{
+		padding-bottom: 53vw;	
+	}
 }
+
+@media (min-width: 0px) and (max-width: 170px) 
+{
+	.arrowg 
+	{
+		display: none;	
+
+	}
+	.info-col
+	{
+		
+		width: 65%;
+		margin: 0 auto;
+	}
+	.container-fluid
+	{
+		width: 72% ;
+	}
+	#pricing-row3-section .row
+	{
+		margin-left: 0px;
+		
+	}
+
+}
+
+
 
 /************************************************************* */
 
