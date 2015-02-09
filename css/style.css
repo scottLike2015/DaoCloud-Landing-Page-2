@@ -2266,41 +2266,91 @@ tbody.collapse.in {
  * 	border: 1px solid black
  * 	> .col
  * 		border: 5px solid red  */
-/****************************************************************** */
-/********************** Base CSS styles *************************** */
+
+/*******************************************************************/
+/********************** Base CSS styles ****************************/
+/*******************************************************************/
+
 body {
-  font-family: Raleway; }
+  color: #0a3153;
+  font-family: Raleway;
+}
+
+.accordion-section-content{
+  font-size: 1.75vw; 
+}
+
+.btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input {
+  font-size: 1.5vw; 
+}
+
+#main-content {
+  margin-top: 51px; 
+}
+
+.content-wrapper {
+  margin-top: 50px;
+}
+
+/*************************************************************************/
+/******************** Heading / Paragraph Base Sizes *********************/
+/*************************************************************************/
+
+h1, h2, h3, h4, h5, h6, span, p { 
+  line-height: 1 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0px;
+}
 
 h1 {
   font-size: 2.825vw;
-  /*font-size: 36px ;*/
-  font-weight: 600 ; }
+  font-weight: 600;
+  line-height: 105%;
+}
 
 h2 {
-  font-size: 2vw; }
+  font-size: 34px;
+  line-height: 110%; 
+}
 
-h3, .accordion-section-content{
-  font-size: 1.75vw; }
+h3 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 125%;
+}
 
-h1, h2, h3, h4, span,p {
- 
-  color: #0a3153;
-  line-height: 1 }
-  h1, h2, h3, h4
-  {
-    margin: 10px 0px;
+/* Sizing H2 and H3s as screen size steps down */
+@media (max-width: 992px) {
+  h2 {
+    font-size: 30px;
   }
 
-.btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input {
-  font-size: 1.5vw; }
-
-#main-content {
-  margin-top: 51px; }
-
-  .content-wrapper
-  {
-  margin-top: 50px;
+  h3 {
+    font-size: 20px;
   }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }  
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
+}
 
 /**************************************************************** */
 /******************* Section CSS Styles ************************* */
@@ -2420,78 +2470,71 @@ label {
   border: 1.5px solid #092f57;
   border-radius: 4px; }
 
-/********************************************************** */
-/********************** Header Styles ********************* */
-  header img
-  {
-	  width: 155px;
-	  margin-top: 4px;
-  }
+/************************************************************/
+/******************** Navigation Styles *********************/
+/************************************************************/
+
+header img {
+	margin-top: 2px;
+  width: 155px;
+}
+
 header.navbar {
-  min-height: 40px !important; 
   background-color: white;
   border-bottom: 1px solid #0a3153;
   margin-bottom: 0;
-  
-  }
-
+  min-height: 40px !important; 
+}
 
 .nav {
-  padding-right: 15px; }
-        .nav > li > a
-        {
-          cursor: pointer;
-        }
+  padding: 1px 15px 0px 0px;
+}
 
-        .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span, .nav > li:nth-of-type(3) span  {
-      padding: 0px 15px !important;
-      top: 7px; 
-      
-    }
-          .nav > li:nth-of-type(1) a:hover, .nav > li:nth-of-type(2) a:hover, .nav > li:nth-of-type(3) a:hover
-      { 
-          color: #0a3153;
-          border-bottom: 1.5px solid #0a3153;
-          padding-bottom: 1.5px;
-          text-decoration: none;
-      }
-       .nav > li:nth-of-type(1), .nav > li:nth-of-type(2), .nav > li:nth-of-type(3){
-        margin-bottom: 5px;}
-      
-   @media (min-width: 768px) {
-      .nav > li {
-        margin: 0px;
-        position: relative;
-        top: 12px; } 
+.nav > li > a {
+  cursor: pointer;
+}
 
-      .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span {
-        /*border-right: 1px solid #31708f;*/
-		border-right: 1px solid #4d6a82;
- }
-        .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span, .nav > li:nth-of-type(3) span  {
-      padding: 0px 10px !important;
-      top: 7px; 
-      
-    }
-       .nav > li:nth-of-type(1), .nav > li:nth-of-type(2), .nav > li:nth-of-type(3){
-        top:15px;}
-         .nav > li:nth-of-type(1) a, .nav > li:nth-of-type(2) a, .nav > li:nth-of-type(3) a{
-          transition: all .1s linear;
-         }   
+.nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span, .nav > li:nth-of-type(3) span  {
+  padding: 0px 15px !important;
+  top: 7px; 
+}
+          
+.nav > li:nth-of-type(1) a:hover, .nav > li:nth-of-type(2) a:hover, .nav > li:nth-of-type(3) a:hover { 
+  color: #0a3153;
+  border-bottom: 1px solid #0a3153;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
 
-    }  
-      .nav > li:nth-of-type(3) a
-      {
-        margin-right: 10px;
-        
-      }
-      .navbar-nav > li > a
-      {
-        line-height: 12px;
-      }
+.nav > li:nth-of-type(1), .nav > li:nth-of-type(2), .nav > li:nth-of-type(3) {
+  margin-bottom: 5px;
+}
+      
+.nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span {
+  /*border-right: 1px solid #31708f;*/
+	border-right: 1px solid #4d6a82;
+}
+
+.nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span, .nav > li:nth-of-type(3) span  {
+  padding: 0px 10px !important;
+  top: 7px; 
+}
+
+.nav > li:nth-of-type(1), .nav > li:nth-of-type(2), .nav > li:nth-of-type(3) {
+  top:15px;
+}
+
+.nav > li:nth-of-type(3) a {
+  margin-right: 10px;
+}
+      
+.navbar-nav > li > a {
+  line-height: 12px;
+}
 
 .navbar-brand {
-  padding: 0px 15px; }
+  padding: 0px 15px; 
+}
 
 .navbar-nav > li:nth-of-type(5) > a {
   padding: 8px 25px;
@@ -2499,35 +2542,51 @@ header.navbar {
   border: 2px solid #0a3153 ;
   color: #0a3153 ;
   border-radius: 4px;
-  top: -3px; 
+  top: -5px; 
   font-weight: bold;
   transition: all .2s linear;
 }
-.navbar-default .navbar-toggle .icon-bar {
-background-color: #888;
-}
-.navbar-default .navbar-toggle {
-border-color: #ddd;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #ddd;
-}
-.navbar-default .navbar-nav > li >span>a {
-/*color: #0a3153;*/
-  color:#4d6a82;
-}
-  .nav-right
-  {
-    top: 160px;
-  }
 
- .divider
- {
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+
+.navbar-default .navbar-nav > li >span>a {
+  color: #0a3153;
+}
+
+.nav-right {
+  top: 160px;
+}
+
+.divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
- }
+}
+
+
+/*******************************************************************/
+/******************** Navigation Media Queries *********************/
+/*******************************************************************/
+
+@media (min-width: 768px) {
+  .nav > li {
+    margin: 0px;
+    position: relative;
+    top: 12px; 
+  }
+} 
+
 
 /**************************************************************** */
 /************** Member Signup & Request Section Styles ***************** */
@@ -3339,6 +3398,39 @@ c
 {
 	/*border: 1px solid black;*/
 }
+
+
+/***************************************************************/
+/******************** Investor Page Styles *********************/
+/***************************************************************/
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.vision-page h3 {
+  padding: 10px 0px;
+}
+
+.pitch-section {
+  padding-top: 90px;
+}
+
+.demo-section {
+  padding-bottom: 0;
+}
+
+.contact-section {
+
+}
+
+.youtube-player {
+} 
+
+
+
+
 
 /************************************************************* */
 
