@@ -2475,6 +2475,12 @@ label {
   border: 1.5px solid #092f57;
   border-radius: 4px; }
 
+/* Overrides for Bootstrap's Default Values*/
+.form-control {
+  border-color: #0a3153;  
+  color: #0a3153;
+}
+
 /************************************************************/
 /******************** Navigation Styles *********************/
 /************************************************************/
@@ -2541,11 +2547,11 @@ header.navbar {
   padding: 0px 15px; 
 }
 
-.navbar-nav > li:nth-of-type(5) > a {
+.navbar-nav > li:nth-of-type(5) > a, .button-daocloud {
   padding: 8px 25px;
   background-color: transparent;
-  border: 2px solid #0a3153 ;
-  color: #0a3153 ;
+  border: 2px solid #0a3153;
+  color: #0a3153;
   border-radius: 4px;
   top: -5px; 
   font-weight: bold;
@@ -3420,6 +3426,7 @@ c
 
 .pitch-section {
   padding-top: 90px;
+  padding-bottom: 0;
 }
 
 .demo-section {
@@ -3427,13 +3434,43 @@ c
 }
 
 .contact-section {
-
+  margin-top: -30px;
+  padding-bottom: 40px;
 }
 
 .youtube-player {
+  height: 315px;
+  width: 560px;
 } 
 
+/* Sizing H2 and H3s as screen size steps down */
+@media (max-width: 992px) {
+  .youtube-player {
+    height: 270px;
+    width: 480px;
+  }
+}
 
+@media (max-width: 768px) {
+  .youtube-player {
+    height: 248px;
+    width: 440px;
+  }
+}
+
+@media (max-width: 610px) {
+  .youtube-player {
+    height: 225px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube-player {
+    height: 197px;
+    width: 350px;
+  }
+}
 
 
 
