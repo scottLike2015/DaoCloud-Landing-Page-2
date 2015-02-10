@@ -2296,10 +2296,13 @@ body {
 /******************** Heading / Paragraph Base Sizes *********************/
 /*************************************************************************/
 
-h1, h2, h3, h4, h5, h6, span, p { 
+h1, h2, h3, h4, h5, h6, span{ 
   line-height: 1 
 }
-
+p, strong
+{
+	line-height: 26px;
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0px;
 }
@@ -2397,11 +2400,6 @@ section
   position: relative;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 96cc9d4b558371831c4605a29cabaaf04caf7355
 /**************************************************************** */
 /************************ Button/Links Styles ************************ */
   .elem-wrapper {
@@ -3465,7 +3463,7 @@ c
 		margin: 0 auto;
 		display: block;
 	}
-<<<<<<< HEAD
+
 	element.style {
 	}
 	#pricing-row3-section .inner-container >div:first-child img {
@@ -3481,11 +3479,11 @@ c
 }
 }
 @media (min-width: 215px) and (max-width: 300px) 
-=======
+
 	
 }
 @media (min-width: 0px) and (max-width: 300px) 
->>>>>>> 96cc9d4b558371831c4605a29cabaaf04caf7355
+
 {
 	#pricing-row3-section .inner-container
 	{
@@ -3573,6 +3571,8 @@ c
 #about-row2-section img
 {
 	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 
@@ -3580,11 +3580,13 @@ c
 {
 	width: 75%;
 	margin: 0 auto;
+	max-width: 330px;
+	
 }
 #about-content img
 {
 	border: 1px solid #0a3153;
-	border-radius: 150px;
+	border-radius: 450px;
 }
 #about-row2-section h1, .team-row  h1
 {
@@ -3612,6 +3614,13 @@ c
 	padding-bottom: 37.65vw; 
 }
 
+@media (max-width:768px)
+{
+	.team-row h3
+	{	
+		
+	}
+}
 /***************************************************************/
 /******************** Investor Page Styles *********************/
 /***************************************************************/
@@ -3685,8 +3694,16 @@ c
   }
 }
 
+/********************* Privacy Page ********************* */
+.privacy-date
+{
+	text-align: center;
+}
 
-
+.privacy-page h1
+{
+	margin: 45px 0px 25px 0px;
+}
 /************************************************************* */
 
 
@@ -3746,76 +3763,7 @@ c
     text-decoration: none; }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
-    header .container
-  {
-    padding: 0px 15px;
-  }
-  .container
-  {
-    padding: 0vw 5vw;
-  }
-  h1 {
-    font-size: 20px;
-    line-height: 19px; }
 
-  h3, {
-    font-size: 17px;
-    line-height: 21px; }
-    
-    .navbar-nav > li:nth-of-type(5){
-      display: inline-block;
-      padding-left: 15px;
-    }
-    .navbar-nav > li:nth-of-type(5) > a {
-      display: inline-block;
-      padding: 8px 15px;
-    }
-  .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
-    font-size: 12px; }
-
-  #signup-row h2 {
-    right: 4vw;
-    text-align: center; } 
-
-  #row1-section .btn
-  {
-    margin-top: 0px;
-  }
-  #row1-section::before
-  {
-    padding-top: 0px;
-  
-  }
-  #signup-row .btn {
-    margin-top: 0px;
-
-  }
-
-
-
-  }
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .pro-signup-wrapper
-  {
-    /*padding: 0px;*/
-  }
-  #signup-row {
-    text-align: center; }
-    #signup-row h2 {
-      position: absolute;
-      left: 50%;
-      margin-left: -74px;
-      font-weight: bold;
-      top: 7%;
-      right: inherit !important; }
-
-    }
-
-
-
-=======
   header .container {
     padding: 0px 15px;
   }
@@ -3874,4 +3822,3 @@ c
     right: inherit !important; 
   }
 }
->>>>>>> 96cc9d4b558371831c4605a29cabaaf04caf7355
