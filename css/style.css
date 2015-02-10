@@ -2340,7 +2340,7 @@ h3 {
   }
 }
 
-//Different
+/*Different*/
   @media (max-width: 768px)
  {
 	 h3, .btn-form
@@ -2400,8 +2400,10 @@ section
   position: relative;
 }
 
-/**************************************************************** */
-/************************ Button/Links Styles ************************ */
+/***********************************************************************/
+/************************ Button/Links Styles **************************/
+/***********************************************************************/
+
   .elem-wrapper {
     margin: 20px auto; }
     button
@@ -2442,16 +2444,25 @@ section
   padding: 5px 0px;
   margin-top: 40px;
  }
-
-
-.btn, input[type="submit"] {
-
+ 
+ /***********************************************************************/
+ /********************** Button/Links Media Queries *********************/
+ /***********************************************************************/
+ 
+@media (max-width: 768px){
+ .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
+   font-size: 12px;
  }
-  .btn:hover, input[type="submit"]:hover {
-  
-  }
-  @media (min-width: 500px) and (max-width: 1150px)
-  {
+
+ #row1-section .btn {
+   margin-top: 0px;
+ }
+ 
+ #signup-row .btn {
+   margin-top: 0px;
+ }
+}
+@media (min-width: 500px) and (max-width: 1150px){
   .btn-long
   {
 	  float: none;
@@ -2460,8 +2471,7 @@ section
 	  min-width: 149px;
   }
 }
-  @media (min-width: 0px) and (max-width: 500px)
-  {
+@media (min-width: 0px) and (max-width: 500px){
   .btn-long
   {
 	  float: none;
@@ -2477,8 +2487,11 @@ input[type="submit"] {
 {
 	border-color: white !important;
 }
-/*********************************************************** */
-/**************** Standard Form Styles ********************* */
+
+/***********************************************************************/
+/************************ Standard Form Styles **************************/
+/***********************************************************************/
+
 label {
   color: #0a3153; }
 
@@ -2497,9 +2510,9 @@ label {
   color: #0a3153;
 }
 
-/************************************************************/
-/******************** Navigation Styles *********************/
-/************************************************************/
+/***********************************************************************/
+/************************ Navigation Styles ****************************/
+/***********************************************************************/
 
 header img {
 	margin-top: 2px;
@@ -2600,12 +2613,9 @@ header.navbar {
   background-color: #e5e5e5;
  }
 
-
-
-
-/*******************************************************************/
-/******************** Navigation Media Queries *********************/
-/*******************************************************************/
+/***********************************************************************/
+/********************** Navigation Media Queries ***********************/
+/***********************************************************************/
 
 @media (min-width: 768px) {
   .nav > li {
@@ -2656,21 +2666,28 @@ header.navbar {
 
   .navbar-fixed-top .navbar-collapse {
     padding-bottom: 40px;
-  }  
-}
+  }
+  
+  header .container {
+    padding: 0px 15px;
+  }
 
-/**************************************************************** */
-/************** Member Signup & Request Section Styles ***************** */
+  .container {
+    padding: 0vw 5vw;
+  }
+    
+}
+/*************************************************************************/
+/*********************** Landing Page / Pro Page *************************/
+/************** Member Signup & Request Section Styles *******************/
+/*************************************************************************/
+
 #row1-section::before {
   content: "";
   display: block;
   padding-bottom: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  #row1-section {
-    /*padding: 0px;*/
-}
-}
+
 #mem-row1-section {
   
   background: url("../images/landing-page-modern.jpg") no-repeat;
@@ -2725,15 +2742,11 @@ header.navbar {
   margin: 18px 0px;
 }
 
-}
-
 .inner-container {
   margin: 0px auto; }
 
   #signup-row {
     height: 37vw; }
-
-
 
 .scrolldown-txt {
   top: 90%;
@@ -2748,9 +2761,24 @@ header.navbar {
     float: left; }
   .scrolldown-txt span:nth-of-type(2) {
     float: right; }
+    
+/*************************************************************************/
+/************** Member Signup/Request Media Queries **********************/
+/*************************************************************************/
+    
+@media (max-width: 768px) {    
 
+    #row1-section::before {
+      padding-top: 0px;
+    }
+     
+    #signup-row h2 {
+      right: 4vw;
+      text-align: center; 
+    } 
+}
 
-    @media (max-width: 500px) {
+@media (max-width: 500px) {
 
 	    #pro-row1-section {
 	    background: url("../images/pro-page-modern.jpg") no-repeat;
@@ -2775,16 +2803,50 @@ header.navbar {
 	    }
 
 		    
-    }
-    @media (min-width: 350px) and (max-width: 500px)	
-    {    
+}
+@media (min-width: 0px) and (max-width: 480px) {
+
+      #signup-row {
+        text-align: center; 
+      }
+  
+      #signup-row h2 {
+        position: absolute;
+        left: 50%;
+        margin-left: -74px;
+        font-weight: bold;
+        top: 7%;
+        right: inherit !important; 
+      }
+      .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
+          font-size: 12px;
+      }
+    }    
+
+
+  #signup-row h2 {
+    right: 4vw;
+    text-align: center; 
+  } 
+
+  #row1-section .btn {
+    margin-top: 0px;
+  }
+
+  #row1-section::before {
+    padding-top: 0px;
+  }
+
+  #signup-row .btn {
+    margin-top: 0px;
+  }
+@media (min-width: 350px) and (max-width: 500px){    
     	#pro-row1-section .container
     	{
 	    height: 55vw;
     	}
     }
-    @media (min-width: 200px) and (max-width: 350px)	
-    {
+    @media (min-width: 200px) and (max-width: 350px){
 	    header img
 	    {
 	   	width: 49vw;
@@ -2798,31 +2860,29 @@ header.navbar {
   		 height: 77vw;
        }
     }
-    @media (max-width: 200px) 
-    {
+@media (max-width: 200px) {
 	    .navbar-brand > img
 	    {
 	    	display: none;
 	    }
 
-    }
-    @media (min-width: 150px) and (max-width: 200px)
-    {
+}
+@media (min-width: 150px) and (max-width: 200px){
     #pro-row1-section .container
    	{
 	 height: 100vw;
        }
    }
-    @media (min-width: 0px) and (max-width: 150px)
-    {
+@media (min-width: 0px) and (max-width: 150px){
          #pro-row1-section .container
    	{
 	   height: 150vw;
         }
    }
-    
-
-/******************* MemberFeatures List Section Styles ******************** */
+ 
+/*****************************************************************************/
+/******************* Member Features List Section Styles *********************/
+/*****************************************************************************/
 
 #ftrslist-section .container{
   top:0px;
@@ -2874,6 +2934,11 @@ header.navbar {
   max-height: 115px;
   */
 }
+/*************************************************************************/
+/************** Landing Page Features List Media Queries *****************/
+/*************************************************************************/
+
+
 @media (min-width: 1200px) {
 .icon-person
 {	
@@ -2961,65 +3026,15 @@ header.navbar {
 	}
 	
 }
-/********************************************************************* */
-/*padding: 16px 0px;
-font-size: 22px;*/
-
-/***************** Standard Number Section Styles ******************** */
-.title-container {
-  position: relative;
-  top: 20px;
-  display: inline-block; }
-  .title-container h3 {
-    font-weight: 600; }
-
-.sec-num-container {
-  display: inline-block;
-  width: 6vw;
-  height: 6vw;
-  font-size: 3vw;
-  border: 0.25vw solid #0a3153;
-  border-radius: 40px;
-  float: left; }
-
-.sec-num {
-  text-align: center;
-  display: inline-block;
-  font-size: 5vw;
-  width: 5.5vw;
-  line-height: 4.5vw; }
-
-.sec-title {
-  display: inline-block;
-  width: 243px;
-  padding: 10px;
-  margin: 0px; }
-
-.signup-btn {
-  float: right; }
-
-.signup-btn2 {
-  position: relative;
-  display: inline-block;
-  padding: 1% 2.4%;
-  float: right;
-  min-width: 60px;
-  width: 15.75vw; }
-
-.signup-btn-alt {
-  margin-top: 10px;
-  float: right;
-  padding: 2.4%;
-  width: 15.75vw; }
-
-/**************************************************************** */
-/***************** User Profile Section ******************** */
+/**********************************************************************/
+/***************** Landing Page Screen Shots Styles ********************/
+/***********************************************************************/
 .scrnsht{
   padding-top: 25px;
 }
-
-/**************************************************************** */
-/***************** FAQ Section Styles ********************* */
+/***********************************************************************/
+/*****************  Pro Member FAQ Section Styles **********************/
+/*************************************************************************/
 .q-header, .q-answer
 {
   text-align: left;
@@ -3030,16 +3045,9 @@ font-size: 22px;*/
   font-weight: normal;
 }
 
-
-
-
-
-/**************************************************************** */
-/***************** Learn Features Section Styles **************** */
-
-
-/**************************************************************** */
-/***************** Subscribe Section Styles ********************* */
+/*****************************************************************/
+/************* Landing Page Subscribe Section Styles *************/
+/*****************************************************************/
 #sbscrb-row {
   position: relative;
   margin: 0 auto; }
@@ -3067,10 +3075,11 @@ font-size: 22px;*/
     width: 82%; }
 
 
-/************************************************************* */
-/******************** Pro Page Page Sytles ******************** */
-
-/******************** Pro Page Page Questions ******************** */
+/*************************************************************************/
+/*********************** Pro Page Page Sytles ****************************/
+/*************************************************************************/
+    
+/*********************** Pro Page Page Questions *************************/
     /*----- Accordion -----*/
     .accordion, .accordion * {
         -webkit-box-sizing:border-box; 
@@ -3119,10 +3128,9 @@ font-size: 22px;*/
 
 
 
-/************************************************************* */
-
-/******************** Regions Page Sytles ******************** */
-
+/*************************************************************************/
+/************************ Regions Page Sytles ****************************/
+/*************************************************************************/
 
 #reg-row1-section {
   background: url("../images/hero-background-regions.jpg") no-repeat;
@@ -3134,6 +3142,8 @@ font-size: 22px;*/
 {
   margin-top: 40px;
 }
+
+
 /**************** Regions Form Section Sytles **************** */
 
 .reg-form
@@ -3288,6 +3298,9 @@ c
   font-weight: bold
 }
 
+/*************************************************************************/
+/************************ Regions Page Media Queries *********************/
+/*************************************************************************/
 
 @media  (max-width: 768px) {
   .reg-form .row div > div:nth-of-type(4)
@@ -3330,10 +3343,9 @@ c
   color: white;
 }
 
-/***************************************************************/
-
-/***************************************************************/
-/********************    Pricing Page   ************************/
+/************************************************************************/
+/************************  Pricing Page Styles   ************************/
+/************************************************************************/
 
 .video-container {
     width: 100%;
@@ -3404,13 +3416,16 @@ c
 	margin: 0 auto;
 	display: block;
 }
-<<<<<<< HEAD
 
 .single-title
 {
 	margin: 45px auto;
 }
 
+
+/************************************************************************/
+/***************** Pricing Page  Media Queries **************************/
+/************************************************************************/
 
 @media (min-width: 550px)
 {
@@ -3550,7 +3565,10 @@ c
 
 }
 
-/******************** About Section Styles ************************** */
+/************************************************************************/
+/************************ About Section Styles **************************/
+/************************************************************************/
+
 #about-row1-section h1
 {
 	margin-bottom: 20px;
@@ -3614,16 +3632,10 @@ c
 	padding-bottom: 37.65vw; 
 }
 
-@media (max-width:768px)
-{
-	.team-row h3
-	{	
-		
-	}
-}
-/***************************************************************/
-/******************** Investor Page Styles *********************/
-/***************************************************************/
+
+/************************************************************************/
+/************************ Investor Page Styles **************************/
+/************************************************************************/
 
 .col-centered {
   float: none;
@@ -3653,7 +3665,10 @@ c
   width: 560px;
 } 
 
-/* Sizing H2 and H3s as screen size steps down */
+/************************************************************************/
+/******************** Investor Page Media Queries ***********************/
+/************************************************************************/
+
 @media (max-width: 992px) {
   .youtube-player {
     height: 283px;
@@ -3693,8 +3708,10 @@ c
     width: 350px;
   }
 }
+/************************************************************************/
+/************************ Privacy Page Styles ***************************/
+/************************************************************************/
 
-/********************* Privacy Page ********************* */
 .privacy-date
 {
 	text-align: center;
@@ -3704,31 +3721,13 @@ c
 {
 	margin: 45px 0px 25px 0px;
 }
-/************************************************************* */
 
-
-/******************** Footer Styles ************************** */
+/************************************************************************/
+/*************************** Footer Styles ******************************/
+/************************************************************************/
   footer .row {
     margin: 15px auto; }
-    @media (max-width: 480px) {
-      footer .footer-links {
-        float: none;
-        width: auto; } }
-  footer li {
-    padding: 1px 10px;
-    display: inline-block;
-    float: left; }
-    @media (max-width: 480px) {
-      footer li {
-        padding: 10px;
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: center;
-        border-right: none !important; } }
-    @media (max-width: 768px) {
-      footer li {
-        font-size: 12px; } }
+    
     footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
       border-right: 1px solid white; }
     footer li a, footer li a:hover {
@@ -3736,89 +3735,46 @@ c
       text-decoration: none; }
 #footer {
   background-color: #0a3153;
-  color: rgba(255, 255, 255, 0.3); }
+  color: rgba(255, 255, 255, 0.3);
+}
+  
 .footer-links {
   background-color: #0a3153;
   color: rgba(255, 255, 255, 0.3); 
   width: 480px;
   margin: 0 auto;
 }
-.footer-inner {
-  padding: 68px 34px; }
 
-#siteInfo {
-  margin-bottom: 1.5em;
-  text-align: center;
-  font-family: "Raleway";
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 500;
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.8);
-  /************************************************************* */ }
-  #siteInfo a, #siteInfo a:active, #siteInfo a:hover, #siteInfo a:visited {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none; }
+footer li {
+  padding: 1px 10px;
+  display: inline-block;
+  float: left; }
 
+/************************************************************************/
+/************************* Footer Media Queries *************************/
+/************************************************************************/ 
+   
 @media (max-width: 768px) {
-
-  header .container {
-    padding: 0px 15px;
-  }
-
-  .container {
-    padding: 0vw 5vw;
-  }
-    
-  .navbar-nav > li:nth-of-type(5){
-    display: inline-block;
-    padding-left: 15px;
-  }
-  
-  .navbar-nav > li:nth-of-type(5) > a {
-    display: inline-block;
-    padding: 8px 15px;
-  }
-  
-  .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
-    font-size: 12px;
-  }
-
-  #signup-row h2 {
-    right: 4vw;
-    text-align: center; 
-  } 
-
-  #row1-section .btn {
-    margin-top: 0px;
-  }
-
-  #row1-section::before {
-    padding-top: 0px;
-  }
-
-  #signup-row .btn {
-    margin-top: 0px;
-  }
+    footer li {
+     font-size: 12px; }
 }
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .pro-signup-wrapper {
-    /*padding: 0px;*/
-  }
-
-  #signup-row {
-    text-align: center; 
-  }
   
-  #signup-row h2 {
-    position: absolute;
-    left: 50%;
-    margin-left: -74px;
-    font-weight: bold;
-    top: 7%;
-    right: inherit !important; 
-  }
-}
+@media (max-width: 480px) {
+	
+     footer .footer-links {
+     float: none;
+     width: auto; }
+     
+    footer li {
+      padding: 10px;
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-right: none !important; } }
+
+
+
+
+
+
