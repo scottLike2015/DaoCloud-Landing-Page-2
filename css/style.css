@@ -2430,7 +2430,7 @@ section
  {
     background-color: white !important;
     color: #0a3153 !important;
-    border-color: #0a3153 !important;
+    
  }
  .btn-wh:hover
  {
@@ -3133,10 +3133,10 @@ header.navbar {
 /*************************************************************************/
 
 #reg-row1-section {
-  background: url("../images/hero-background-regions.jpg") no-repeat;
-  /*height: 42.25vw;*/
-  background-size: contain;
-  color: white;
+	background: url("../images/hero-background-regions.jpg") no-repeat;
+	height: 425px;
+	background-size: cover;
+	color: white;
    }
 #reg-row1-section h3
 {
@@ -3156,7 +3156,7 @@ header.navbar {
 }
 #reg-row2-section .reg-form
 {
-    margin-top: -396px;  
+    margin-top: -210px;  
 }
 #reg-row5-section 
 {
@@ -3192,7 +3192,8 @@ header.navbar {
 }
 .frm-btn-con
 {
-  width: 21.5%;
+  width: 23%;
+  min-width: 150px;
 }
 .btn-form
 {
@@ -3241,6 +3242,21 @@ header.navbar {
     padding-left: 28.5%;
 
 }
+.send-msg-reg
+{
+	position: absolute;
+	right: -114px;
+	top: 21px;
+	font-size: 12px;
+	color: #23527c;
+	text-decoration: none;
+	cursor: pointer;
+}
+.send-msg-reg:hover
+{
+	color: #0a3153;
+	text-decoration: none;
+}
 #reg-row2-section .reg-form
 {
   margin-bottom: 25px;
@@ -3265,9 +3281,9 @@ header.navbar {
 {
   padding-left: 100px;
 }
-c
 
-/**************** Region Section Sytles **************** */
+
+/**************** Region Section Sytles ******************/
 .reg-col
 {
   text-align: center;
@@ -3283,6 +3299,7 @@ c
 #reg-row3-section .row
 {
   font-size: 1.75vw;
+  text-align: center;
 }
 .reg-col span
 {
@@ -3302,7 +3319,24 @@ c
 /************************ Regions Page Media Queries *********************/
 /*************************************************************************/
 
+@media  (max-width: 996px) {
+.reg-form .form-control
+{
+  font-size: 12px !important;
+}
+.reg-form select
+{
+  padding-left: 20.5%;
+}
+
+
+}
 @media  (max-width: 768px) {
+
+  .reg-form select
+   {
+     padding-left: 22%;
+    }
   .reg-form .row div > div:nth-of-type(4)
 {
   float: none;
@@ -3322,14 +3356,53 @@ c
     font-size: 17px;
     margin: 0 auto;
     display: block;
+    max-width: 100%;
   }
+ #hercampus
+ {
+	 padding-left:  0px;
+ }
+  
 }
+@media  (min-width: 520px) and (max-width: 768px){
+        .reg-form input[name="phone"]
+         {
+           text-align: center;
+          }
+}
+@media  (min-width: 520px) and (max-width: 720px){
+        .reg-form select
+         {
+           padding-left: 12.5%;
+          }
+}
+
 @media  (max-width: 520px) {
   .reg-col
   {
     
     width: 100%;
   }
+#regions-page .reg-form .inner-container div
+{
+	width: 100%;
+}
+.reg-form select
+{
+	padding-left: 6px;
+}
+.send-msg-reg
+{
+	display: block;
+	position: relative;
+	top: 2px;
+	right: 0px;
+	text-align: right;
+}
+#regions-page .reg-form .frm-btn-con
+{
+	width: 75% !important;
+}
 
   }
 
