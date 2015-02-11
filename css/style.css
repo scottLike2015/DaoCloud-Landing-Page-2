@@ -1706,7 +1706,6 @@ tbody.collapse.in {
     .navbar-fixed-top .navbar-collapse,
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
-
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
@@ -2266,51 +2265,107 @@ tbody.collapse.in {
  *  border: 1px solid black
  *  > .col
  *    border: 5px solid red  */
-/****************************************************************** */
-/********************** Base CSS styles *************************** */
+
+
+/*******************************************************************/
+/********************** Base CSS styles ****************************/
+/*******************************************************************/
+
 body {
-  font-family: Raleway; }
+  color: #0a3153;
+  font-family: Raleway;
+}
+
+.accordion-section-content{
+  font-size: 1.75vw; 
+}
+
+.btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input {
+  font-size: 1.5vw; 
+}
+
+#main-content {
+  margin-top: 51px; 
+}
+
+.content-wrapper {
+  margin-top: 50px;
+}
+
+/*************************************************************************/
+/******************** Heading / Paragraph Base Sizes *********************/
+/*************************************************************************/
+
+h1, h2, h3, h4, h5, h6, span{ 
+  line-height: 1 
+}
+p, strong
+{
+  line-height: 26px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0px;
+}
+
+h1 a, h1 a:hover, h1 a:visited, h2 a, h2 a:hover, h2 a:visited, h3 a, h3 a:hover, h3 a:visited, h4 a, h4 a:hover, h4 a:visited, h5 a, h5 a:hover, h5 a:visited, h6 a, h6 a:hover, h6 a:visited {
+  color: #0a3153;
+  text-decoration: underline;
+} 
 
 h1 {
   font-size: 2.825vw;
-  /*font-size: 36px ;*/
-  font-weight: 600 ; }
+  font-weight: 600;
+  line-height: 105%;
+}
 
 h2 {
-  font-size: 2vw; }
+  font-size: 34px;
+  line-height: 110%; 
+}
 
-h3, .accordion-section-content{
-  font-size: 1.75vw; }
+.subtitle, h3 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 125%;
+}
 
-h1, h2, h3, h4, span,p {
- 
-  color: #0a3153;
-  line-height: 1 }
-  h1, h2, h3, h4
-  {
-    margin: 10px 0px;
+/* Sizing H2 and H3s as screen size steps down */
+@media (max-width: 992px) {
+  h2 {
+    font-size: 30px;
   }
 
-.btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input {
-  font-size: 1.5vw; }
-
-#main-content {
-  margin-top: 51px; }
-
-  .content-wrapper
-  {
-  margin-top: 50px;
-  }
-  
-  @media (max-width: 768px)
- {
-   h3, .btn-form
-    {
-         font-size: 12px !important;
-        line-height: 1.4;
-   
+ .subtitle, h3 {
+    font-size: 20px;
   }
 }
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    line-height: 19px; }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }  
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
+}
+
+
 /**************************************************************** */
 /******************* Section CSS Styles ************************* */
 section h1,h2,h3, h4{
@@ -2337,10 +2392,10 @@ section
   position: relative;
 }
 
+/***********************************************************************/
+/************************ Button/Links Styles **************************/
+/***********************************************************************/
 
-
-/**************************************************************** */
-/************************ Button/Links Styles ************************ */
   .elem-wrapper {
     margin: 20px auto; }
     button
@@ -2367,7 +2422,7 @@ section
  {
     background-color: white !important;
     color: #0a3153 !important;
-    border-color: #0a3153 !important;
+    
  }
  .btn-wh:hover
  {
@@ -2381,16 +2436,32 @@ section
   padding: 5px 0px;
   margin-top: 40px;
  }
-
-
-.btn, input[type="submit"] {
-
+ 
+ /***********************************************************************/
+ /********************** Button/Links Media Queries *********************/
+ /***********************************************************************/
+ 
+@media (max-width: 768px){
+ .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
+   font-size: 14px;
  }
-  .btn:hover, input[type="submit"]:hover {
-  
-  }
-  @media (min-width: 500px) and (max-width: 1150px)
+
+ #row1-section .btn {
+   margin-top: 0px;
+ }
+ 
+ #signup-row .btn {
+   margin-top: 0px;
+ }
+ 
+ .btn-form
   {
+       font-size: 12px !important;
+      line-height: 1.4;
+ 
+}
+}
+@media (min-width: 500px) and (max-width: 1150px){
   .btn-long
   {
     float: none;
@@ -2399,8 +2470,7 @@ section
     min-width: 149px;
   }
 }
-  @media (min-width: 0px) and (max-width: 500px)
-  {
+@media (min-width: 0px) and (max-width: 500px){
   .btn-long
   {
     float: none;
@@ -2416,8 +2486,11 @@ input[type="submit"] {
 {
   border-color: white !important;
 }
-/*********************************************************** */
-/**************** Standard Form Styles ********************* */
+
+/***********************************************************************/
+/************************ Standard Form Styles **************************/
+/***********************************************************************/
+
 label {
   color: #0a3153; }
 
@@ -2429,127 +2502,191 @@ label {
   border: 1.5px solid #092f57;
   border-radius: 4px; }
 
-/********************************************************** */
-/********************** Header Styles ********************* */
-  header img
-  {
-    width: 155px;
-    margin-top: 4px;
-  }
+
+/* Overrides for Bootstrap's Default Values*/
+.form-control {
+  border-color: #0a3153;  
+  color: #0a3153;
+}
+
+/***********************************************************************/
+/************************ Navigation Styles ****************************/
+/***********************************************************************/
+
+header img {
+  margin-top: 2px;
+  width: 155px;
+}
+
 header.navbar {
-  min-height: 40px !important; 
   background-color: white;
   border-bottom: 1px solid #0a3153;
   margin-bottom: 0;
-  
-  }
-
+  min-height: 40px !important; 
+}
 
 .nav {
-  padding-right: 15px; }
-        .nav > li > a
-        {
-          cursor: pointer;
-        }
+  padding: 1px 15px 0px 0px;
+}
 
-        .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span, .nav > li:nth-of-type(3) span  {
-      padding: 0px 15px !important;
-      top: 7px; 
-      
-    }
-          .nav > li:nth-of-type(1) a:hover, .nav > li:nth-of-type(2) a:hover, .nav > li:nth-of-type(3) a:hover
-      { 
-          color: #0a3153;
-          border-bottom: 1.5px solid #0a3153;
-          padding-bottom: 1.5px;
-          text-decoration: none;
-      }
-       .nav > li:nth-of-type(1), .nav > li:nth-of-type(2), .nav > li:nth-of-type(3){
-        margin-bottom: 5px;}
-      
-   @media (min-width: 768px) {
-      .nav > li {
-        margin: 0px;
-        position: relative;
-        top: 12px; } 
+.nav > li > a {
+  cursor: pointer;
+}
 
-      .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span {
-        /*border-right: 1px solid #31708f;*/
-    border-right: 1px solid #4d6a82;
- }
-        .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span, .nav > li:nth-of-type(3) span  {
-      padding: 0px 10px !important;
-      top: 7px; 
-      
-    }
-       .nav > li:nth-of-type(1), .nav > li:nth-of-type(2), .nav > li:nth-of-type(3){
-        top:15px;}
-         .nav > li:nth-of-type(1) a, .nav > li:nth-of-type(2) a, .nav > li:nth-of-type(3) a{
-          transition: all .1s linear;
-         }   
+.nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span  {
+  padding: 0px 15px !important;
+  top: 7px; 
+}
+          
+.nav > li:nth-of-type(1) a:hover, .nav > li:nth-of-type(2) a:hover { 
+  color: #0a3153;
+  border-bottom: 1px solid #0a3153;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
 
-    }  
-      .nav > li:nth-of-type(3) a
-      {
-        margin-right: 10px;
-        
-      }
-      .navbar-nav > li > a
-      {
-        line-height: 12px;
-      }
+.nav > li:nth-of-type(1), .nav > li:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+      
+.nav > li:nth-of-type(1) span{
+  border-right: 1px solid #0a3153;
+}
+
+.nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span  {
+  padding: 0px 10px !important;
+  top: 7px; 
+}
+
+.nav > li:nth-of-type(1), .nav > li:nth-of-type(2) {
+  top:15px;
+}
+
+.nav > li:nth-of-type(2) a {
+  margin-right: 10px;
+}
+      
+.navbar-nav > li > a {
+  line-height: 12px;
+}
 
 .navbar-brand {
-  padding: 0px 15px; }
+  padding: 0px 15px; 
+}
 
-.navbar-nav > li:nth-of-type(5) > a {
+.navbar-nav > li:nth-of-type(3) > a, .button-daocloud {
   padding: 8px 25px;
   background-color: transparent;
-  border: 2px solid #0a3153 ;
-  color: #0a3153 ;
+  border: 2px solid #0a3153;
+  color: #0a3153;
   border-radius: 4px;
-  top: -3px; 
+  top: -5px; 
   font-weight: bold;
   transition: all .2s linear;
 }
-.navbar-default .navbar-toggle .icon-bar {
-background-color: #888;
-}
-.navbar-default .navbar-toggle {
-border-color: #ddd;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #ddd;
-}
-.navbar-default .navbar-nav > li >span>a {
-/*color: #0a3153;*/
-  color:#4d6a82;
-}
-  .nav-right
-  {
-    top: 160px;
-  }
 
- .divider
- {
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+
+.navbar-default .navbar-nav > li >span>a {
+  color: #0a3153;
+}
+
+.nav-right {
+  top: 160px;
+}
+
+.divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
  }
 
-/**************************************************************** */
-/************** Member Signup & Request Section Styles ***************** */
+/***********************************************************************/
+/********************** Navigation Media Queries ***********************/
+/***********************************************************************/
+
+@media (min-width: 768px) {
+  .nav > li {
+    margin: 0px;
+    position: relative;
+    top: 12px; 
+  }
+} 
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0px;
+  }
+
+  .nav > li:nth-of-type(1) span {
+    border-right: none;
+  }
+
+  .nav > li:nth-of-type(1), .nav > li:nth-of-type(2) {
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  .nav > li:nth-of-type(2) a {
+    margin-right: 0px;
+  }
+
+  .nav > li:nth-of-type(1) a:hover, .nav > li:nth-of-type(2) a:hover {
+    border-bottom: none;
+  }
+
+  .navbar-nav {
+    margin: 0px;
+  }
+
+  .navbar-nav > li:nth-of-type(3) > a, .button-daocloud {
+    background-color: #0a3153;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    top: 15px; 
+    transition: none;
+    width: 50%;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-bottom: 40px;
+  }
+  
+  header .container {
+    padding: 0px 15px;
+  }
+
+  .container {
+    padding: 0vw 5vw;
+  }
+    
+}
+/*************************************************************************/
+/*********************** Landing Page / Pro Page *************************/
+/************** Member Signup & Request Section Styles *******************/
+/*************************************************************************/
+
 #row1-section::before {
   content: "";
   display: block;
   padding-bottom: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  #row1-section {
-    /*padding: 0px;*/
-}
-}
+
 #mem-row1-section {
   
   background: url("../images/landing-page-modern.jpg") no-repeat;
@@ -2604,15 +2741,11 @@ background-color: #ddd;
   margin: 18px 0px;
 }
 
-}
-
 .inner-container {
   margin: 0px auto; }
 
   #signup-row {
     height: 37vw; }
-
-
 
 .scrolldown-txt {
   top: 90%;
@@ -2627,9 +2760,24 @@ background-color: #ddd;
     float: left; }
   .scrolldown-txt span:nth-of-type(2) {
     float: right; }
+    
+/*************************************************************************/
+/************** Member Signup/Request Media Queries **********************/
+/*************************************************************************/
+    
+@media (max-width: 768px) {    
 
+    #row1-section::before {
+      padding-top: 0px;
+    }
+     
+    #signup-row h2 {
+      right: 4vw;
+      text-align: center; 
+    } 
+}
 
-    @media (max-width: 500px) {
+@media (max-width: 500px) {
 
       #pro-row1-section {
       background: url("../images/pro-page-modern.jpg") no-repeat;
@@ -2654,16 +2802,50 @@ background-color: #ddd;
       }
 
         
-    }
-    @media (min-width: 350px) and (max-width: 500px)  
-    {    
+}
+@media (min-width: 0px) and (max-width: 480px) {
+
+      #signup-row {
+        text-align: center; 
+      }
+  
+      #signup-row h2 {
+        position: absolute;
+        left: 50%;
+        margin-left: -74px;
+        font-weight: bold;
+        top: 7%;
+        right: inherit !important; 
+      }
+      .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
+          font-size: 14px;
+      }
+    }    
+
+
+  #signup-row h2 {
+    right: 4vw;
+    text-align: center; 
+  } 
+
+  #row1-section .btn {
+    margin-top: 0px;
+  }
+
+  #row1-section::before {
+    padding-top: 0px;
+  }
+
+  #signup-row .btn {
+    margin-top: 0px;
+  }
+@media (min-width: 350px) and (max-width: 500px){    
       #pro-row1-section .container
       {
       height: 55vw;
       }
     }
-    @media (min-width: 200px) and (max-width: 350px)  
-    {
+    @media (min-width: 200px) and (max-width: 350px){
       header img
       {
       width: 49vw;
@@ -2677,31 +2859,29 @@ background-color: #ddd;
        height: 77vw;
        }
     }
-    @media (max-width: 200px) 
-    {
+@media (max-width: 200px) {
       .navbar-brand > img
       {
         display: none;
       }
 
-    }
-    @media (min-width: 150px) and (max-width: 200px)
-    {
+}
+@media (min-width: 150px) and (max-width: 200px){
     #pro-row1-section .container
     {
    height: 100vw;
        }
    }
-    @media (min-width: 0px) and (max-width: 150px)
-    {
+@media (min-width: 0px) and (max-width: 150px){
          #pro-row1-section .container
     {
      height: 150vw;
         }
    }
-    
-
-/******************* MemberFeatures List Section Styles ******************** */
+ 
+/*****************************************************************************/
+/******************* Member Features List Section Styles *********************/
+/*****************************************************************************/
 
 #ftrslist-section .container{
   top:0px;
@@ -2753,6 +2933,11 @@ background-color: #ddd;
   max-height: 115px;
   */
 }
+/*************************************************************************/
+/************** Landing Page Features List Media Queries *****************/
+/*************************************************************************/
+
+
 @media (min-width: 1200px) {
 .icon-person
 { 
@@ -2840,65 +3025,15 @@ background-color: #ddd;
   }
   
 }
-/********************************************************************* */
-/*padding: 16px 0px;
-font-size: 22px;*/
-
-/***************** Standard Number Section Styles ******************** */
-.title-container {
-  position: relative;
-  top: 20px;
-  display: inline-block; }
-  .title-container h3 {
-    font-weight: 600; }
-
-.sec-num-container {
-  display: inline-block;
-  width: 6vw;
-  height: 6vw;
-  font-size: 3vw;
-  border: 0.25vw solid #0a3153;
-  border-radius: 40px;
-  float: left; }
-
-.sec-num {
-  text-align: center;
-  display: inline-block;
-  font-size: 5vw;
-  width: 5.5vw;
-  line-height: 4.5vw; }
-
-.sec-title {
-  display: inline-block;
-  width: 243px;
-  padding: 10px;
-  margin: 0px; }
-
-.signup-btn {
-  float: right; }
-
-.signup-btn2 {
-  position: relative;
-  display: inline-block;
-  padding: 1% 2.4%;
-  float: right;
-  min-width: 60px;
-  width: 15.75vw; }
-
-.signup-btn-alt {
-  margin-top: 10px;
-  float: right;
-  padding: 2.4%;
-  width: 15.75vw; }
-
-/**************************************************************** */
-/***************** User Profile Section ******************** */
+/**********************************************************************/
+/***************** Landing Page Screen Shots Styles ********************/
+/***********************************************************************/
 .scrnsht{
   padding-top: 25px;
 }
-
-/**************************************************************** */
-/***************** FAQ Section Styles ********************* */
+/***********************************************************************/
+/*****************  Pro Member FAQ Section Styles **********************/
+/*************************************************************************/
 .q-header, .q-answer
 {
   text-align: left;
@@ -2909,16 +3044,9 @@ font-size: 22px;*/
   font-weight: normal;
 }
 
-
-
-
-
-/**************************************************************** */
-/***************** Learn Features Section Styles **************** */
-
-
-/**************************************************************** */
-/***************** Subscribe Section Styles ********************* */
+/*****************************************************************/
+/************* Landing Page Subscribe Section Styles *************/
+/*****************************************************************/
 #sbscrb-row {
   position: relative;
   margin: 0 auto; }
@@ -2929,11 +3057,14 @@ font-size: 22px;*/
     text-align: center;
     font-weight: normal;
     margin: 0vw 0vw; }
-  #sbscrb-row input {
+  #sbscrb-row .em-input { 
+    line-height: 1.4;
     width: 100%;
     display: block;
     padding: 12px !important;
-    border: 3px solid #0a3153; }
+    border: 3px solid #0a3153;
+    font-family: Raleway;
+ }
     #sbscrb-row input::-webkit-input-placeholder {
       text-align: center; }
     #sbscrb-row input:-moz-placeholder {
@@ -2944,12 +3075,20 @@ font-size: 22px;*/
       text-align: center; }
   #sbscrb-row .scrb-btn-ctr {
     width: 82%; }
+   #sbscrb-row input[type="submit"] 
+   {
+     background: white;
+     line-height: 1;
+     font-size: 18px;
+     font-family: Raleway;
+   }
 
 
-/************************************************************* */
-/******************** Pro Page Page Sytles ******************** */
-
-/******************** Pro Page Page Questions ******************** */
+/*************************************************************************/
+/*********************** Pro Page Page Sytles ****************************/
+/*************************************************************************/
+    
+/*********************** Pro Page Page Questions *************************/
     /*----- Accordion -----*/
     .accordion, .accordion * {
         -webkit-box-sizing:border-box; 
@@ -2998,21 +3137,22 @@ font-size: 22px;*/
 
 
 
-/************************************************************* */
-
-/******************** Regions Page Sytles ******************** */
-
+/*************************************************************************/
+/************************ Regions Page Sytles ****************************/
+/*************************************************************************/
 
 #reg-row1-section {
   background: url("../images/hero-background-regions.jpg") no-repeat;
-  /*height: 42.25vw;*/
-  background-size: contain;
+  height: 425px;
+  background-size: cover;
   color: white;
    }
 #reg-row1-section h3
 {
   margin-top: 40px;
 }
+
+
 /**************** Regions Form Section Sytles **************** */
 
 .reg-form
@@ -3025,7 +3165,7 @@ font-size: 22px;*/
 }
 #reg-row2-section .reg-form
 {
-    margin-top: -396px;  
+    margin-top: -210px;  
 }
 #reg-row5-section 
 {
@@ -3061,20 +3201,23 @@ font-size: 22px;*/
 }
 .frm-btn-con
 {
-  width: 21.5%;
+  width: 25%;
+  min-width: 150px;
 }
 .btn-form
 {
    background-color: #0a3153;
-   font-size: 1.75vw ;
+   font-size: 1.75vw !important;
    font-weight: 600; 
    color: white;
    height: 58px !important;
 }
+
 .btn-form h3
 {
   font-weight: normal;
 }
+
 #frm-btm-btn
 {
   margin-bottom: -70px;
@@ -3103,15 +3246,25 @@ font-size: 22px;*/
     font-size : 1.75px;
     color: #0a3153;
     -webkit-appearance: none;
-    -moz-appearance: no
-
-
-
-
-    ne;
+    -moz-appearance: none;
     appearance: none;
     padding-left: 28.5%;
 
+}
+.send-msg-reg
+{
+  position: absolute;
+  right: -114px;
+  top: 21px;
+  font-size: 12px;
+  color: #23527c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.send-msg-reg:hover
+{
+  color: #0a3153;
+  text-decoration: none;
 }
 #reg-row2-section .reg-form
 {
@@ -3137,9 +3290,9 @@ font-size: 22px;*/
 {
   padding-left: 100px;
 }
-c
 
-/**************** Region Section Sytles **************** */
+
+/**************** Region Section Sytles ******************/
 .reg-col
 {
   text-align: center;
@@ -3155,6 +3308,7 @@ c
 #reg-row3-section .row
 {
   font-size: 1.75vw;
+  text-align: center;
 }
 .reg-col span
 {
@@ -3170,8 +3324,28 @@ c
   font-weight: bold
 }
 
+/*************************************************************************/
+/************************ Regions Page Media Queries *********************/
+/*************************************************************************/
 
+@media  (max-width: 996px) {
+.reg-form .form-control
+{
+  font-size: 12px !important;
+}
+.reg-form select
+{
+  padding-left: 20.5%;
+}
+
+
+}
 @media  (max-width: 768px) {
+
+  .reg-form select
+   {
+     padding-left: 22%;
+    }
   .reg-form .row div > div:nth-of-type(4)
 {
   float: none;
@@ -3191,14 +3365,53 @@ c
     font-size: 17px;
     margin: 0 auto;
     display: block;
+    max-width: 100%;
   }
+ #hercampus
+ {
+   padding-left:  0px;
+ }
+  
 }
+@media  (min-width: 520px) and (max-width: 768px){
+        .reg-form input[name="phone"]
+         {
+           text-align: center;
+          }
+}
+@media  (min-width: 520px) and (max-width: 720px){
+        .reg-form select
+         {
+           padding-left: 12.5%;
+          }
+}
+
 @media  (max-width: 520px) {
   .reg-col
   {
     
     width: 100%;
   }
+#regions-page .reg-form .inner-container div
+{
+  width: 100%;
+}
+.reg-form select
+{
+  padding-left: 6px;
+}
+.send-msg-reg
+{
+  display: block;
+  position: relative;
+  top: 2px;
+  right: 0px;
+  text-align: right;
+}
+#regions-page .reg-form .frm-btn-con
+{
+  width: 75% !important;
+}
 
   }
 
@@ -3212,10 +3425,9 @@ c
   color: white;
 }
 
-/***************************************************************/
-
-/***************************************************************/
-/********************    Pricing Page   ************************/
+/************************************************************************/
+/************************  Pricing Page Styles   ************************/
+/************************************************************************/
 
 .video-container {
     width: 100%;
@@ -3266,6 +3478,7 @@ c
   padding-bottom: 0px;
 }
 
+
 .infog-txt
 {
   padding-top: 2vw;
@@ -3292,6 +3505,10 @@ c
 }
 
 
+/************************************************************************/
+/***************** Pricing Page  Media Queries **************************/
+/************************************************************************/
+
 @media (min-width: 550px)
 {
 
@@ -3308,6 +3525,7 @@ c
     padding-bottom: 6vw;
   }
 }
+
 @media (min-width: 0px) and (max-width: 550px)
 {
 #pricing-row3-section .inner-container
@@ -3342,6 +3560,7 @@ c
     margin: 0 auto;
     display: block;
   }
+
   element.style {
   }
   #pricing-row3-section .inner-container >div:first-child img {
@@ -3357,6 +3576,11 @@ c
 }
 }
 @media (min-width: 215px) and (max-width: 300px) 
+
+  
+}
+@media (min-width: 0px) and (max-width: 300px) 
+
 {
   #pricing-row3-section .inner-container
   {
@@ -3368,7 +3592,6 @@ c
   {
     padding-bottom: 53vw; 
   }
-
 
   .arrowg
   {
@@ -3424,32 +3647,169 @@ c
 
 }
 
+/************************************************************************/
+/************************ About Section Styles **************************/
+/************************************************************************/
+
+#about-row1-section h1
+{
+  margin-bottom: 20px;
+}
+
+#about-row2-section p
+{
+  font-size: 16px;
+}
+#about-row1-section h3
+{
+  font-weight: normal;
+}
+#about-row2-section .col-lg-4{
+  padding: 0px 30px;
+}
+
+#about-row2-section img
+{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
 
 
-/************************************************************* */
+.team-row img
+{
+  width: 75%;
+  margin: 0 auto;
+  max-width: 330px;
+  
+}
+#about-content img
+{
+  border: 1px solid #0a3153;
+  border-radius: 450px;
+}
+#about-row2-section h1, .team-row  h1
+{
+  margin-bottom: 30px;
+  
+}
+#about-row2-section h3, .team-row h3
+{
+  font-weight: 600;
+  
+}
+#about-row2-section h3
+{
+  margin: 25px 0px;
+}
+.team-row h3
+{
+  margin: 25px 0px;
+  margin-bottom: 45px;
+}
+#about-row4-section::after
+{
+  content:" ";
+  display: block;
+  padding-bottom: 37.65vw; 
+}
 
-/******************** Footer Styles ************************** */
+
+/************************************************************************/
+/************************ Investor Page Styles **************************/
+/************************************************************************/
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.vision-page h3 {
+  padding: 10px 0px;
+}
+
+.pitch-section {
+  padding-top: 90px;
+  padding-bottom: 0;
+}
+
+.demo-section {
+  padding-bottom: 0;
+}
+
+.contact-section {
+  margin-top: -30px;
+  padding-bottom: 40px;
+}
+
+.youtube-player {
+  height: 330px;
+  width: 560px;
+} 
+
+/************************************************************************/
+/******************** Investor Page Media Queries ***********************/
+/************************************************************************/
+
+@media (max-width: 992px) {
+  .youtube-player {
+    height: 283px;
+    width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pitch-section {
+    padding-top: 80px;
+  }
+  
+  .youtube-player {
+    height: 259px;
+    width: 440px;
+  }
+}
+
+@media (max-width: 610px) {
+  .pitch-section {
+    padding-top: 70px;
+  }
+
+  .youtube-player {
+    height: 236px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pitch-section {
+    padding-top: 60px;
+  }
+
+  .youtube-player {
+    height: 206px;
+    width: 350px;
+  }
+}
+/************************************************************************/
+/************************ Privacy Page Styles ***************************/
+/************************************************************************/
+
+.privacy-date
+{
+  text-align: center;
+}
+
+.privacy-page h1
+{
+  margin: 45px 0px 25px 0px;
+}
+
+/************************************************************************/
+/*************************** Footer Styles ******************************/
+/************************************************************************/
   footer .row {
     margin: 15px auto; }
-    @media (max-width: 480px) {
-      footer .footer-links {
-        float: none;
-        width: auto; } }
-  footer li {
-    padding: 1px 10px;
-    display: inline-block;
-    float: left; }
-    @media (max-width: 480px) {
-      footer li {
-        padding: 10px;
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: center;
-        border-right: none !important; } }
-    @media (max-width: 768px) {
-      footer li {
-        font-size: 12px; } }
+    
     footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
       border-right: 1px solid white; }
     footer li a, footer li a:hover {
@@ -3457,95 +3817,40 @@ c
       text-decoration: none; }
 #footer {
   background-color: #0a3153;
-  color: rgba(255, 255, 255, 0.3); }
+  color: rgba(255, 255, 255, 0.3);
+}
+  
 .footer-links {
   background-color: #0a3153;
   color: rgba(255, 255, 255, 0.3); 
   width: 480px;
   margin: 0 auto;
 }
-.footer-inner {
-  padding: 68px 34px; }
 
-#siteInfo {
-  margin-bottom: 1.5em;
-  text-align: center;
-  font-family: "Raleway";
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 500;
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.8);
-  /************************************************************* */ }
-  #siteInfo a, #siteInfo a:active, #siteInfo a:hover, #siteInfo a:visited {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none; }
+footer li {
+  padding: 1px 10px;
+  display: inline-block;
+  float: left; }
 
+/************************************************************************/
+/************************* Footer Media Queries *************************/
+/************************************************************************/ 
+   
 @media (max-width: 768px) {
-    header .container
-  {
-    padding: 0px 15px;
-  }
-  .container
-  {
-    padding: 0vw 5vw;
-  }
-  h1 {
-    font-size: 20px;
-    line-height: 19px; }
-
-  h3, {
-    font-size: 17px;
-    line-height: 21px; }
-    
-    .navbar-nav > li:nth-of-type(5){
-      display: inline-block;
-      padding-left: 15px;
-    }
-    .navbar-nav > li:nth-of-type(5) > a {
-      display: inline-block;
-      padding: 8px 15px;
-    }
-  .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
-    font-size: 12px; }
-
-  #signup-row h2 {
-    right: 4vw;
-    text-align: center; } 
-
-  #row1-section .btn
-  {
-    margin-top: 0px;
-  }
-  #row1-section::before
-  {
-    padding-top: 0px;
+    footer li {
+     font-size: 12px; }
+}
   
-  }
-  #signup-row .btn {
-    margin-top: 0px;
-
-  }
-
-
-
-  }
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .pro-signup-wrapper
-  {
-    /*padding: 0px;*/
-  }
-  #signup-row {
-    text-align: center; }
-    #signup-row h2 {
-      position: absolute;
-      left: 50%;
-      margin-left: -74px;
-      font-weight: bold;
-      top: 7%;
-      right: inherit !important; }
-
-    }
+@media (max-width: 480px) {
+  
+     footer .footer-links {
+     float: none;
+     width: auto; }
+     
+    footer li {
+      padding: 10px;
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-right: none !important; } }
