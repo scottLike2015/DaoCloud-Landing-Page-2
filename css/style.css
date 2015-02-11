@@ -2259,12 +2259,18 @@ tbody.collapse.in {
 /***************************************************************** */
 /***************** UNCOMMENT TO SEE GRID LAYOUT ****************** */
 /* .container
- * 	border: 5px solid orange
+ *  border: 5px solid orange
  *
  * .row
+<<<<<<< HEAD
  * 	border: 1px solid black
  * 	> .col
  * 		border: 5px solid red  */
+=======
+ *  border: 1px solid black
+ *  > .col
+ *    border: 5px solid red  */
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 
 
 /*******************************************************************/
@@ -2301,7 +2307,11 @@ h1, h2, h3, h4, h5, h6, span{
 }
 p, strong
 {
+<<<<<<< HEAD
 	line-height: 26px;
+=======
+  line-height: 26px;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0px;
@@ -2400,7 +2410,7 @@ section
     margin: 20px auto; }
     button
     {
-	background-color: inherit;
+  background-color: inherit;
     }
 
 .btn {
@@ -2455,7 +2465,11 @@ section
  }
  
  .btn-form
+<<<<<<< HEAD
 	{
+=======
+  {
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
        font-size: 12px !important;
       line-height: 1.4;
  
@@ -2464,19 +2478,19 @@ section
 @media (min-width: 500px) and (max-width: 1150px){
   .btn-long
   {
-	  float: none;
-	  width: 70%;
-	  margin: 0 auto;
-	  min-width: 149px;
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 149px;
   }
 }
 @media (min-width: 0px) and (max-width: 500px){
   .btn-long
   {
-	  float: none;
-	  width: 75%;
-	  margin: 0 auto;
-	  min-width: 149px;
+    float: none;
+    width: 75%;
+    margin: 0 auto;
+    min-width: 149px;
   }
 }
 input[type="submit"] {
@@ -2484,7 +2498,7 @@ input[type="submit"] {
 
 .pro-signup-wrapper .btn:hover
 {
-	border-color: white !important;
+  border-color: white !important;
 }
 
 /***********************************************************************/
@@ -2514,7 +2528,11 @@ label {
 /***********************************************************************/
 
 header img {
+<<<<<<< HEAD
 	margin-top: 2px;
+=======
+  margin-top: 2px;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
   width: 155px;
 }
 
@@ -2550,7 +2568,11 @@ header.navbar {
 }
       
 .nav > li:nth-of-type(1) span{
+<<<<<<< HEAD
 	border-right: 1px solid #0a3153;
+=======
+  border-right: 1px solid #0a3153;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span  {
@@ -2695,18 +2717,18 @@ header.navbar {
   color: white;
    }
    #pro-row1-section {
-	   background: url("../images/pro-page-modern.jpg") no-repeat;
-	   /*height: 32vw;*/
-	   color: white;
-	   background-size: contain;
-	   overflow: visible;
-	   padding: 0px;
+     background: url("../images/pro-page-modern.jpg") no-repeat;
+     /*height: 32vw;*/
+     color: white;
+     background-size: contain;
+     overflow: visible;
+     padding: 0px;
       }
     #pro-row1-section .container
     {
-	    height: 32vw;
-	    text-align: center;  /* align the inline(-block) elements horizontally */
-	    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+      height: 32vw;
+      text-align: center;  /* align the inline(-block) elements horizontally */
+      font: 0/0 a;         /* remove the gap between inline(-block) elements */
     }
    
     #pro-row1-section .container:before {    /* create a full-height inline block pseudo=element */
@@ -2716,14 +2738,14 @@ header.navbar {
         height: 100%;
     }
     #pro-row1-section .container .row {
-	    display: inline-block;
-	    vertical-align: middle;
-	    font-family: Raleway;
-	    line-height: 1;      /* <-- reset the font property */
+      display: inline-block;
+      vertical-align: middle;
+      font-family: Raleway;
+      line-height: 1;      /* <-- reset the font property */
     }
    #pro-row1-section #signup-row
    {
-   	height: auto;
+    height: auto;
    }
 
    .pro-signup-wrapper
@@ -2779,6 +2801,7 @@ header.navbar {
 
 @media (max-width: 500px) {
 
+<<<<<<< HEAD
 	    #pro-row1-section {
 	    background: url("../images/pro-page-modern.jpg") no-repeat;
 	    background-size: cover;
@@ -2802,6 +2825,31 @@ header.navbar {
 	    }
 
 		    
+=======
+      #pro-row1-section {
+      background: url("../images/pro-page-modern.jpg") no-repeat;
+      background-size: cover;
+      }
+
+      #propage h1
+      {
+     font-size: 15px;
+     line-height: 1.4;
+      }
+      #propage h3, .accordion-section-content
+      {
+     font-size: 12px;
+     line-height: 1.4;
+       
+      }
+      #propage #signup-row .btn
+      {
+        font-size: 10px;
+        width: 100%;
+      }
+
+        
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 @media (min-width: 0px) and (max-width: 480px) {
 
@@ -2840,6 +2888,7 @@ header.navbar {
     margin-top: 0px;
   }
 @media (min-width: 350px) and (max-width: 500px){    
+<<<<<<< HEAD
     	#pro-row1-section .container
     	{
 	    height: 55vw;
@@ -2853,29 +2902,51 @@ header.navbar {
 	    	min-width: 98px;
 	    	margin-top: 5%;
 	    }
+=======
+      #pro-row1-section .container
+      {
+      height: 55vw;
+      }
+    }
+    @media (min-width: 200px) and (max-width: 350px){
+      header img
+      {
+      width: 49vw;
+        max-width: 144px;
+        min-width: 98px;
+        margin-top: 5%;
+      }
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
     
         #pro-row1-section .container
-       	{
-  		 height: 77vw;
+        {
+       height: 77vw;
        }
     }
 @media (max-width: 200px) {
+<<<<<<< HEAD
 	    .navbar-brand > img
 	    {
 	    	display: none;
 	    }
+=======
+      .navbar-brand > img
+      {
+        display: none;
+      }
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 
 }
 @media (min-width: 150px) and (max-width: 200px){
     #pro-row1-section .container
-   	{
-	 height: 100vw;
+    {
+   height: 100vw;
        }
    }
 @media (min-width: 0px) and (max-width: 150px){
          #pro-row1-section .container
-   	{
-	   height: 150vw;
+    {
+     height: 150vw;
         }
    }
  
@@ -2898,7 +2969,7 @@ header.navbar {
 }
 .svg-color
 {
-	fill: red;
+  fill: red;
 }
 
 .ftr-list-txt
@@ -2921,10 +2992,10 @@ header.navbar {
 }
 .icon-person
 {
-	padding: 1.6vw;
-	height: 6.88vw;
-	min-height: 60px;
-	max-height: 108px;
+  padding: 1.6vw;
+  height: 6.88vw;
+  min-height: 60px;
+  max-height: 108px;
   /*
   padding: 45px;
   padding: 1.8vw;
@@ -2940,10 +3011,10 @@ header.navbar {
 
 @media (min-width: 1200px) {
 .icon-person
-{	
-	padding: 22.298px;
+{ 
+  padding: 22.298px;
 }
-	
+  
 }
 @media (min-width: 992px) {
 
@@ -2983,7 +3054,7 @@ header.navbar {
   
   .ftr-list-txt
   {
-	  text-align: center;
+    text-align: center;
   }
 
   .icon-person-txt, .icon-person-wrapper
@@ -2995,16 +3066,16 @@ header.navbar {
 
 @media (min-width: 300px) and (max-width:1200px)
 {
-	.ftr-list-img 
-	{
-		margin-left: 30px;
-	}
+  .ftr-list-img 
+  {
+    margin-left: 30px;
+  }
 }
 @media (max-width: 550px)
 {
    .ftr-list-txt
    {
-	   font-size: 13px;
+     font-size: 13px;
    }
 }
    @media (max-width: 480px) {
@@ -3016,6 +3087,7 @@ header.navbar {
 
 @media (min-width:0 ) and (max-width: 300px) 
 {
+<<<<<<< HEAD
 	.ftrslist-content {
 	width: auto;
 	}
@@ -3024,6 +3096,16 @@ header.navbar {
 		padding: 0px;
 	}
 	
+=======
+  .ftrslist-content {
+  width: auto;
+  }
+  .ftr-padding
+  {
+    padding: 0px;
+  }
+  
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 /**********************************************************************/
 /***************** Landing Page Screen Shots Styles ********************/
@@ -3077,10 +3159,17 @@ header.navbar {
     width: 82%; }
    #sbscrb-row input[type="submit"] 
    {
+<<<<<<< HEAD
 	   background: white;
 	   line-height: 1;
 	   font-size: 18px;
 	   font-family: Raleway;
+=======
+     background: white;
+     line-height: 1;
+     font-size: 18px;
+     font-family: Raleway;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
    }
 
 
@@ -3100,23 +3189,23 @@ header.navbar {
         overflow:hidden;
         box-shadow:0px 1px 3px rgba(0,0,0,0.25);
         border-radius:3px;
-	margin: 35px auto;
+  margin: 35px auto;
 
     }
  
     /*----- Section Titles -----*/
     .accordion-section-title {
-	    width: 100%;
-	    padding: 15px;
-	    display: inline-block;
-	    border-bottom: 1px solid #0a3153;
-	    margin: 0;
-	    transition: all .1s linear;
+      width: 100%;
+      padding: 15px;
+      display: inline-block;
+      border-bottom: 1px solid #0a3153;
+      margin: 0;
+      transition: all .1s linear;
     }
  
     .accordion-section-title.active, .accordion-section-title:hover {
-	    background: #0a3153;
-	    color: white;
+      background: #0a3153;
+      color: white;
     }
  
     .accordion-section:last-child .accordion-section-title {
@@ -3127,12 +3216,12 @@ header.navbar {
     .accordion-section-content {
         padding:15px;
         display:none;
-	border-bottom: 1px solid #0a3153;
-	padding-bottom: 3.5vw; 
+  border-bottom: 1px solid #0a3153;
+  padding-bottom: 3.5vw; 
     }
     .accordion-section:last-child .accordion-section-content
     {
-	 border-bottom: none;   
+   border-bottom: none;   
     }
 
 
@@ -3142,10 +3231,17 @@ header.navbar {
 /*************************************************************************/
 
 #reg-row1-section {
+<<<<<<< HEAD
 	background: url("../images/hero-background-regions.jpg") no-repeat;
 	height: 425px;
 	background-size: cover;
 	color: white;
+=======
+  background: url("../images/hero-background-regions.jpg") no-repeat;
+  height: 425px;
+  background-size: cover;
+  color: white;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
    }
 #reg-row1-section h3
 {
@@ -3215,7 +3311,11 @@ header.navbar {
 
 .btn-form h3
 {
+<<<<<<< HEAD
 	font-weight: normal;
+=======
+  font-weight: normal;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 #frm-btm-btn
@@ -3253,6 +3353,7 @@ header.navbar {
 }
 .send-msg-reg
 {
+<<<<<<< HEAD
 	position: absolute;
 	right: -114px;
 	top: 21px;
@@ -3265,6 +3366,20 @@ header.navbar {
 {
 	color: #0a3153;
 	text-decoration: none;
+=======
+  position: absolute;
+  right: -114px;
+  top: 21px;
+  font-size: 12px;
+  color: #23527c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.send-msg-reg:hover
+{
+  color: #0a3153;
+  text-decoration: none;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 #reg-row2-section .reg-form
 {
@@ -3327,6 +3442,7 @@ header.navbar {
 /*************************************************************************/
 /************************ Regions Page Media Queries *********************/
 /*************************************************************************/
+<<<<<<< HEAD
 
 @media  (max-width: 996px) {
 .reg-form .form-control
@@ -3339,6 +3455,20 @@ header.navbar {
 }
 
 
+=======
+
+@media  (max-width: 996px) {
+.reg-form .form-control
+{
+  font-size: 12px !important;
+}
+.reg-form select
+{
+  padding-left: 20.5%;
+}
+
+
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 @media  (max-width: 768px) {
 
@@ -3369,6 +3499,7 @@ header.navbar {
   }
  #hercampus
  {
+<<<<<<< HEAD
 	 padding-left:  0px;
  }
   
@@ -3379,6 +3510,18 @@ header.navbar {
            text-align: center;
           }
 }
+=======
+   padding-left:  0px;
+ }
+  
+}
+@media  (min-width: 520px) and (max-width: 768px){
+        .reg-form input[name="phone"]
+         {
+           text-align: center;
+          }
+}
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 @media  (min-width: 520px) and (max-width: 720px){
         .reg-form select
          {
@@ -3394,6 +3537,7 @@ header.navbar {
   }
 #regions-page .reg-form .inner-container div
 {
+<<<<<<< HEAD
 	width: 100%;
 }
 .reg-form select
@@ -3411,6 +3555,25 @@ header.navbar {
 #regions-page .reg-form .frm-btn-con
 {
 	width: 75% !important;
+=======
+  width: 100%;
+}
+.reg-form select
+{
+  padding-left: 6px;
+}
+.send-msg-reg
+{
+  display: block;
+  position: relative;
+  top: 2px;
+  right: 0px;
+  text-align: right;
+}
+#regions-page .reg-form .frm-btn-con
+{
+  width: 75% !important;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
   }
@@ -3454,51 +3617,89 @@ header.navbar {
 }
 #pricing-row2-section .col-xs-12 > h1
 {
-	margin: 45px auto;
+  margin: 45px auto;
 }
 #pricing-row3-section .inner-container
 {
-	width: 57vw;
-	margin: 0 auto;
+  width: 57vw;
+  margin: 0 auto;
 }
 .info-col
 {
-	width: 19vw;
-	float: left;
+  width: 19vw;
+  float: left;
 }
 #pricing-row3-section .inner-container >div:first-child img
 {
+<<<<<<< HEAD
 	padding-bottom: 4vw;
 	display: block;
 	width: 100%;	
+=======
+  padding-bottom: 4vw;
+  display: block;
+  width: 100%;  
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 #pricing-row3-section .inner-container >div:first-child img:last-child
 {
+<<<<<<< HEAD
 	padding-bottom: 0px;
+=======
+  padding-bottom: 0px;
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 
 .infog-txt
 {
-	padding-top: 2vw;
-	padding-bottom: 12vw;
-	font-size: 1.75vw;
-	text-align: left;
+  padding-top: 2vw;
+  padding-bottom: 12vw;
+  font-size: 1.75vw;
+  text-align: left;
 }
 
 .arrowg
 {
-	padding-top: 5vw;
-		
+  padding-top: 5vw;
+    
 }
 .arrowg img
 {
-	width: 23%;	
-	margin: 0 auto;
-	display: block;
+  width: 23%; 
+  margin: 0 auto;
+  display: block;
 }
 
+.single-title
+{
+  margin: 45px auto;
+}
+
+
+/************************************************************************/
+/***************** Pricing Page  Media Queries **************************/
+/************************************************************************/
+
+@media (min-width: 550px)
+{
+
+  #pricing-row3-section .inner-container
+  {
+    width: 51vw;
+  }
+  .info-col
+  {
+    width: 17vw;
+  }
+  .infog-txt
+  {
+    padding-bottom: 6vw;
+  }
+}
+
+<<<<<<< HEAD
 .single-title
 {
 	margin: 45px auto;
@@ -3526,17 +3727,19 @@ header.navbar {
 	}
 }
 
+=======
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 @media (min-width: 0px) and (max-width: 550px)
 {
 #pricing-row3-section .inner-container
 {
-	width: 80vw;
-	margin: 0 auto;
+  width: 80vw;
+  margin: 0 auto;
 }
 .info-col
 {
-	width: 26.6vw;
-	float: left;
+  width: 26.6vw;
+  float: left;
 }
 
 }
@@ -3545,6 +3748,7 @@ header.navbar {
 
 
 
+<<<<<<< HEAD
 	.infog-txt
 	{
 		font-size: 3vw;
@@ -3581,18 +3785,52 @@ header.navbar {
 }
 @media (min-width: 0px) and (max-width: 300px) 
 
+=======
+  .infog-txt
+  {
+    font-size: 3vw;
+  }
+  .arrowg
+  {
+    padding-top: 5vw;
+    
+  }
+  .arrowg img
+  {
+    width: 28%; 
+    margin: 0 auto;
+    display: block;
+  }
+
+  element.style {
+  }
+  #pricing-row3-section .inner-container >div:first-child img {
+    padding-bottom: 12vw;
+  }
+  
+}
+@media (max-width: 300px) 
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 {
-	#pricing-row3-section .inner-container
-	{
-		width: 80vw;
-		margin: 0 auto;
-	}
+.infog-txt
+{
+  font-size: 10px;
+}
+}
+@media (min-width: 215px) and (max-width: 300px) 
 
-	#pricing-row3-section .inner-container >div:first-child img
-	{
-		padding-bottom: 53vw;	
-	}
+  
+}
+@media (min-width: 0px) and (max-width: 300px) 
 
+{
+  #pricing-row3-section .inner-container
+  {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+<<<<<<< HEAD
 	.arrowg
 	{
 		padding-top: 5vw;
@@ -3854,9 +4092,275 @@ footer li {
       width: 100%;
       text-align: center;
       border-right: none !important; } }
+=======
+  #pricing-row3-section .inner-container >div:first-child img
+  {
+    padding-bottom: 53vw; 
+  }
+
+  .arrowg
+  {
+    padding-top: 5vw;
+    
+  }
+  .arrowg img
+  {
+    width: 56%; 
+
+  }
+  .infog-txt
+  {
+    font-size: 5vw; 
+  }
+  
+}
+@media (min-width: 170px) and (max-width: 215px) 
+{
+  .arrowg img
+  {
+    width: 56%; 
+
+  }
+  #pricing-row3-section .inner-container >div:first-child img
+  {
+    padding-bottom: 53vw; 
+  }
+}
+
+@media (min-width: 0px) and (max-width: 170px) 
+{
+  .arrowg 
+  {
+    display: none;  
+
+  }
+  .info-col
+  {
+    
+    width: 65%;
+    margin: 0 auto;
+  }
+  .container-fluid
+  {
+    width: 72% ;
+  }
+  #pricing-row3-section .row
+  {
+    margin-left: 0px;
+    
+  }
+
+}
+
+/************************************************************************/
+/************************ About Section Styles **************************/
+/************************************************************************/
+
+#about-row1-section h1
+{
+  margin-bottom: 20px;
+}
+
+#about-row2-section p
+{
+  font-size: 16px;
+}
+#about-row1-section h3
+{
+  font-weight: normal;
+}
+#about-row2-section .col-lg-4{
+  padding: 0px 30px;
+}
+
+#about-row2-section img
+{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
 
 
+.team-row img
+{
+  width: 75%;
+  margin: 0 auto;
+  max-width: 330px;
+  
+}
+#about-content img
+{
+  border: 1px solid #0a3153;
+  border-radius: 450px;
+}
+#about-row2-section h1, .team-row  h1
+{
+  margin-bottom: 30px;
+  
+}
+#about-row2-section h3, .team-row h3
+{
+  font-weight: 600;
+  
+}
+#about-row2-section h3
+{
+  margin: 25px 0px;
+}
+.team-row h3
+{
+  margin: 25px 0px;
+  margin-bottom: 45px;
+}
+#about-row4-section::after
+{
+  content:" ";
+  display: block;
+  padding-bottom: 37.65vw; 
+}
 
 
+/************************************************************************/
+/************************ Investor Page Styles **************************/
+/************************************************************************/
 
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
 
+.vision-page h3 {
+  padding: 10px 0px;
+}
+
+.pitch-section {
+  padding-top: 90px;
+  padding-bottom: 0;
+}
+
+.demo-section {
+  padding-bottom: 0;
+}
+
+.contact-section {
+  margin-top: -30px;
+  padding-bottom: 40px;
+}
+
+.youtube-player {
+  height: 330px;
+  width: 560px;
+} 
+
+/************************************************************************/
+/******************** Investor Page Media Queries ***********************/
+/************************************************************************/
+
+@media (max-width: 992px) {
+  .youtube-player {
+    height: 283px;
+    width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pitch-section {
+    padding-top: 80px;
+  }
+  
+  .youtube-player {
+    height: 259px;
+    width: 440px;
+  }
+}
+
+@media (max-width: 610px) {
+  .pitch-section {
+    padding-top: 70px;
+  }
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
+
+  .youtube-player {
+    height: 236px;
+    width: 400px;
+  }
+}
+
+<<<<<<< HEAD
+
+=======
+@media (max-width: 480px) {
+  .pitch-section {
+    padding-top: 60px;
+  }
+
+  .youtube-player {
+    height: 206px;
+    width: 350px;
+  }
+}
+/************************************************************************/
+/************************ Privacy Page Styles ***************************/
+/************************************************************************/
+
+.privacy-date
+{
+  text-align: center;
+}
+
+.privacy-page h1
+{
+  margin: 45px 0px 25px 0px;
+}
+>>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
+
+/************************************************************************/
+/*************************** Footer Styles ******************************/
+/************************************************************************/
+  footer .row {
+    margin: 15px auto; }
+    
+    footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
+      border-right: 1px solid white; }
+    footer li a, footer li a:hover {
+      color: white;
+      text-decoration: none; }
+#footer {
+  background-color: #0a3153;
+  color: rgba(255, 255, 255, 0.3);
+}
+  
+.footer-links {
+  background-color: #0a3153;
+  color: rgba(255, 255, 255, 0.3); 
+  width: 480px;
+  margin: 0 auto;
+}
+
+footer li {
+  padding: 1px 10px;
+  display: inline-block;
+  float: left; }
+
+/************************************************************************/
+/************************* Footer Media Queries *************************/
+/************************************************************************/ 
+   
+@media (max-width: 768px) {
+    footer li {
+     font-size: 12px; }
+}
+  
+@media (max-width: 480px) {
+  
+     footer .footer-links {
+     float: none;
+     width: auto; }
+     
+    footer li {
+      padding: 10px;
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-right: none !important; } }
