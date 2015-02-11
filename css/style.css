@@ -2323,7 +2323,7 @@ h2 {
   line-height: 110%; 
 }
 
-h3 {
+.subtitle, h3 {
   font-size: 22px;
   font-weight: normal;
   line-height: 125%;
@@ -2335,21 +2335,12 @@ h3 {
     font-size: 30px;
   }
 
-  h3 {
+ .subtitle, h3 {
     font-size: 20px;
   }
 }
 
-/*Different*/
-  @media (max-width: 768px)
- {
-	 h3, .btn-form
-  	{
- 	       font-size: 12px !important;
- 	      line-height: 1.4;
-   
-  }
-}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 20px;
@@ -2373,6 +2364,7 @@ h3 {
     font-size: 14px;
   }
 }
+
 
 /**************************************************************** */
 /******************* Section CSS Styles ************************* */
@@ -2451,7 +2443,7 @@ section
  
 @media (max-width: 768px){
  .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
-   font-size: 12px;
+   font-size: 14px;
  }
 
  #row1-section .btn {
@@ -2461,6 +2453,13 @@ section
  #signup-row .btn {
    margin-top: 0px;
  }
+ 
+ .btn-form
+	{
+       font-size: 12px !important;
+      line-height: 1.4;
+ 
+}
 }
 @media (min-width: 500px) and (max-width: 1150px){
   .btn-long
@@ -2819,7 +2818,7 @@ header.navbar {
         right: inherit !important; 
       }
       .btn, input[type="submit"], .scrolldown-txt, .scrb-frm-ctr input, .footer-links li {
-          font-size: 12px;
+          font-size: 14px;
       }
     }    
 
@@ -3058,11 +3057,14 @@ header.navbar {
     text-align: center;
     font-weight: normal;
     margin: 0vw 0vw; }
-  #sbscrb-row input {
+  #sbscrb-row .em-input { 
+    line-height: 1.4;
     width: 100%;
     display: block;
     padding: 12px !important;
-    border: 3px solid #0a3153; }
+    border: 3px solid #0a3153;
+    font-family: Raleway;
+ }
     #sbscrb-row input::-webkit-input-placeholder {
       text-align: center; }
     #sbscrb-row input:-moz-placeholder {
@@ -3073,6 +3075,13 @@ header.navbar {
       text-align: center; }
   #sbscrb-row .scrb-btn-ctr {
     width: 82%; }
+   #sbscrb-row input[type="submit"] 
+   {
+	   background: white;
+	   line-height: 1;
+	   font-size: 18px;
+	   font-family: Raleway;
+   }
 
 
 /*************************************************************************/
@@ -3192,7 +3201,7 @@ header.navbar {
 }
 .frm-btn-con
 {
-  width: 23%;
+  width: 25%;
   min-width: 150px;
 }
 .btn-form
