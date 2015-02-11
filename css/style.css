@@ -2262,15 +2262,9 @@ tbody.collapse.in {
  *  border: 5px solid orange
  *
  * .row
-<<<<<<< HEAD
- * 	border: 1px solid black
- * 	> .col
- * 		border: 5px solid red  */
-=======
  *  border: 1px solid black
  *  > .col
  *    border: 5px solid red  */
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 
 
 /*******************************************************************/
@@ -2307,11 +2301,7 @@ h1, h2, h3, h4, h5, h6, span{
 }
 p, strong
 {
-<<<<<<< HEAD
-	line-height: 26px;
-=======
   line-height: 26px;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0px;
@@ -2465,11 +2455,7 @@ section
  }
  
  .btn-form
-<<<<<<< HEAD
-	{
-=======
   {
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
        font-size: 12px !important;
       line-height: 1.4;
  
@@ -2528,11 +2514,7 @@ label {
 /***********************************************************************/
 
 header img {
-<<<<<<< HEAD
-	margin-top: 2px;
-=======
   margin-top: 2px;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
   width: 155px;
 }
 
@@ -2568,11 +2550,7 @@ header.navbar {
 }
       
 .nav > li:nth-of-type(1) span{
-<<<<<<< HEAD
-	border-right: 1px solid #0a3153;
-=======
   border-right: 1px solid #0a3153;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 .nav > li:nth-of-type(1) span, .nav > li:nth-of-type(2) span  {
@@ -2801,31 +2779,6 @@ header.navbar {
 
 @media (max-width: 500px) {
 
-<<<<<<< HEAD
-	    #pro-row1-section {
-	    background: url("../images/pro-page-modern.jpg") no-repeat;
-	    background-size: cover;
-	    }
-
-	    #propage h1
-	    {
-		 font-size: 15px;
-		 line-height: 1.4;
-	    }
-	    #propage h3, .accordion-section-content
-	    {
-		 font-size: 12px;
-		 line-height: 1.4;
-		   
-	    }
-	    #propage #signup-row .btn
-	    {
-		    font-size: 10px;
-		    width: 100%;
-	    }
-
-		    
-=======
       #pro-row1-section {
       background: url("../images/pro-page-modern.jpg") no-repeat;
       background-size: cover;
@@ -2849,7 +2802,6 @@ header.navbar {
       }
 
         
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 @media (min-width: 0px) and (max-width: 480px) {
 
@@ -2888,21 +2840,6 @@ header.navbar {
     margin-top: 0px;
   }
 @media (min-width: 350px) and (max-width: 500px){    
-<<<<<<< HEAD
-    	#pro-row1-section .container
-    	{
-	    height: 55vw;
-    	}
-    }
-    @media (min-width: 200px) and (max-width: 350px){
-	    header img
-	    {
-	   	width: 49vw;
-	    	max-width: 144px;
-	    	min-width: 98px;
-	    	margin-top: 5%;
-	    }
-=======
       #pro-row1-section .container
       {
       height: 55vw;
@@ -2916,7 +2853,6 @@ header.navbar {
         min-width: 98px;
         margin-top: 5%;
       }
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
     
         #pro-row1-section .container
         {
@@ -2924,17 +2860,10 @@ header.navbar {
        }
     }
 @media (max-width: 200px) {
-<<<<<<< HEAD
-	    .navbar-brand > img
-	    {
-	    	display: none;
-	    }
-=======
       .navbar-brand > img
       {
         display: none;
       }
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 
 }
 @media (min-width: 150px) and (max-width: 200px){
@@ -3087,16 +3016,6 @@ header.navbar {
 
 @media (min-width:0 ) and (max-width: 300px) 
 {
-<<<<<<< HEAD
-	.ftrslist-content {
-	width: auto;
-	}
-	.ftr-padding
-	{
-		padding: 0px;
-	}
-	
-=======
   .ftrslist-content {
   width: auto;
   }
@@ -3104,8 +3023,6 @@ header.navbar {
   {
     padding: 0px;
   }
-  
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 /**********************************************************************/
 /***************** Landing Page Screen Shots Styles ********************/
@@ -3159,17 +3076,10 @@ header.navbar {
     width: 82%; }
    #sbscrb-row input[type="submit"] 
    {
-<<<<<<< HEAD
-	   background: white;
-	   line-height: 1;
-	   font-size: 18px;
-	   font-family: Raleway;
-=======
      background: white;
      line-height: 1;
      font-size: 18px;
      font-family: Raleway;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
    }
 
 
@@ -3231,17 +3141,10 @@ header.navbar {
 /*************************************************************************/
 
 #reg-row1-section {
-<<<<<<< HEAD
-	background: url("../images/hero-background-regions.jpg") no-repeat;
-	height: 425px;
-	background-size: cover;
-	color: white;
-=======
   background: url("../images/hero-background-regions.jpg") no-repeat;
   height: 425px;
   background-size: cover;
   color: white;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
    }
 #reg-row1-section h3
 {
@@ -3311,11 +3214,7 @@ header.navbar {
 
 .btn-form h3
 {
-<<<<<<< HEAD
-	font-weight: normal;
-=======
   font-weight: normal;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 #frm-btm-btn
@@ -3353,20 +3252,6 @@ header.navbar {
 }
 .send-msg-reg
 {
-<<<<<<< HEAD
-	position: absolute;
-	right: -114px;
-	top: 21px;
-	font-size: 12px;
-	color: #23527c;
-	text-decoration: none;
-	cursor: pointer;
-}
-.send-msg-reg:hover
-{
-	color: #0a3153;
-	text-decoration: none;
-=======
   position: absolute;
   right: -114px;
   top: 21px;
@@ -3379,7 +3264,6 @@ header.navbar {
 {
   color: #0a3153;
   text-decoration: none;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 #reg-row2-section .reg-form
 {
@@ -3442,7 +3326,6 @@ header.navbar {
 /*************************************************************************/
 /************************ Regions Page Media Queries *********************/
 /*************************************************************************/
-<<<<<<< HEAD
 
 @media  (max-width: 996px) {
 .reg-form .form-control
@@ -3455,20 +3338,6 @@ header.navbar {
 }
 
 
-=======
-
-@media  (max-width: 996px) {
-.reg-form .form-control
-{
-  font-size: 12px !important;
-}
-.reg-form select
-{
-  padding-left: 20.5%;
-}
-
-
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 @media  (max-width: 768px) {
 
@@ -3499,18 +3368,6 @@ header.navbar {
   }
  #hercampus
  {
-<<<<<<< HEAD
-	 padding-left:  0px;
- }
-  
-}
-@media  (min-width: 520px) and (max-width: 768px){
-        .reg-form input[name="phone"]
-         {
-           text-align: center;
-          }
-}
-=======
    padding-left:  0px;
  }
   
@@ -3521,7 +3378,6 @@ header.navbar {
            text-align: center;
           }
 }
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 @media  (min-width: 520px) and (max-width: 720px){
         .reg-form select
          {
@@ -3537,25 +3393,6 @@ header.navbar {
   }
 #regions-page .reg-form .inner-container div
 {
-<<<<<<< HEAD
-	width: 100%;
-}
-.reg-form select
-{
-	padding-left: 6px;
-}
-.send-msg-reg
-{
-	display: block;
-	position: relative;
-	top: 2px;
-	right: 0px;
-	text-align: right;
-}
-#regions-page .reg-form .frm-btn-con
-{
-	width: 75% !important;
-=======
   width: 100%;
 }
 .reg-form select
@@ -3573,7 +3410,6 @@ header.navbar {
 #regions-page .reg-form .frm-btn-con
 {
   width: 75% !important;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
   }
@@ -3631,24 +3467,14 @@ header.navbar {
 }
 #pricing-row3-section .inner-container >div:first-child img
 {
-<<<<<<< HEAD
-	padding-bottom: 4vw;
-	display: block;
-	width: 100%;	
-=======
   padding-bottom: 4vw;
   display: block;
   width: 100%;  
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 #pricing-row3-section .inner-container >div:first-child img:last-child
 {
-<<<<<<< HEAD
-	padding-bottom: 0px;
-=======
   padding-bottom: 0px;
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 }
 
 
@@ -3699,7 +3525,6 @@ header.navbar {
   }
 }
 
-<<<<<<< HEAD
 .single-title
 {
 	margin: 45px auto;
@@ -3726,9 +3551,6 @@ header.navbar {
 		padding-bottom: 6vw;
 	}
 }
-
-=======
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 @media (min-width: 0px) and (max-width: 550px)
 {
 #pricing-row3-section .inner-container
@@ -3745,47 +3567,6 @@ header.navbar {
 }
 @media (min-width: 300px) and (max-width: 550px)
 {
-
-
-
-<<<<<<< HEAD
-	.infog-txt
-	{
-		font-size: 3vw;
-	}
-	.arrowg
-	{
-		padding-top: 5vw;
-		
-	}
-	.arrowg img
-	{
-		width: 28%;	
-		margin: 0 auto;
-		display: block;
-	}
-
-	element.style {
-	}
-	#pricing-row3-section .inner-container >div:first-child img {
-		padding-bottom: 12vw;
-	}
-	
-}
-@media (max-width: 300px) 
-{
-.infog-txt
-{
-	font-size: 10px;
-}
-}
-@media (min-width: 215px) and (max-width: 300px) 
-
-	
-}
-@media (min-width: 0px) and (max-width: 300px) 
-
-=======
   .infog-txt
   {
     font-size: 3vw;
@@ -3810,7 +3591,6 @@ header.navbar {
   
 }
 @media (max-width: 300px) 
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 {
 .infog-txt
 {
@@ -3830,269 +3610,6 @@ header.navbar {
     margin: 0 auto;
   }
 
-<<<<<<< HEAD
-	.arrowg
-	{
-		padding-top: 5vw;
-		
-	}
-	.arrowg img
-	{
-		width: 56%;	
-
-	}
-	.infog-txt
-	{
-		font-size: 5vw; 
-	}
-	
-}
-@media (min-width: 170px) and (max-width: 215px) 
-{
-	.arrowg img
-	{
-		width: 56%;	
-
-	}
-	#pricing-row3-section .inner-container >div:first-child img
-	{
-		padding-bottom: 53vw;	
-	}
-}
-
-@media (min-width: 0px) and (max-width: 170px) 
-{
-	.arrowg 
-	{
-		display: none;	
-
-	}
-	.info-col
-	{
-		
-		width: 65%;
-		margin: 0 auto;
-	}
-	.container-fluid
-	{
-		width: 72% ;
-	}
-	#pricing-row3-section .row
-	{
-		margin-left: 0px;
-		
-	}
-
-}
-
-/************************************************************************/
-/************************ About Section Styles **************************/
-/************************************************************************/
-
-#about-row1-section h1
-{
-	margin-bottom: 20px;
-}
-
-#about-row2-section p
-{
-	font-size: 16px;
-}
-#about-row1-section h3
-{
-	font-weight: normal;
-}
-#about-row2-section .col-lg-4{
-	padding: 0px 30px;
-}
-
-#about-row2-section img
-{
-	width: 100%;
-	max-width: 400px;
-	margin: 0 auto;
-}
-
-
-.team-row img
-{
-	width: 75%;
-	margin: 0 auto;
-	max-width: 330px;
-	
-}
-#about-content img
-{
-	border: 1px solid #0a3153;
-	border-radius: 450px;
-}
-#about-row2-section h1, .team-row  h1
-{
-	margin-bottom: 30px;
-	
-}
-#about-row2-section h3, .team-row h3
-{
-	font-weight: 600;
-	
-}
-#about-row2-section h3
-{
-	margin: 25px 0px;
-}
-.team-row h3
-{
-	margin: 25px 0px;
-	margin-bottom: 45px;
-}
-#about-row4-section::after
-{
-	content:" ";
-	display: block;
-	padding-bottom: 37.65vw; 
-}
-
-
-/************************************************************************/
-/************************ Investor Page Styles **************************/
-/************************************************************************/
-
-.col-centered {
-  float: none;
-  margin: 0 auto;
-}
-
-.vision-page h3 {
-  padding: 10px 0px;
-}
-
-.pitch-section {
-  padding-top: 90px;
-  padding-bottom: 0;
-}
-
-.demo-section {
-  padding-bottom: 0;
-}
-
-.contact-section {
-  margin-top: -30px;
-  padding-bottom: 40px;
-}
-
-.youtube-player {
-  height: 330px;
-  width: 560px;
-} 
-
-/************************************************************************/
-/******************** Investor Page Media Queries ***********************/
-/************************************************************************/
-
-@media (max-width: 992px) {
-  .youtube-player {
-    height: 283px;
-    width: 480px;
-  }
-}
-
-@media (max-width: 768px) {
-  .pitch-section {
-    padding-top: 80px;
-  }
-  
-  .youtube-player {
-    height: 259px;
-    width: 440px;
-  }
-}
-
-@media (max-width: 610px) {
-  .pitch-section {
-    padding-top: 70px;
-  }
-
-  .youtube-player {
-    height: 236px;
-    width: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-  .pitch-section {
-    padding-top: 60px;
-  }
-
-  .youtube-player {
-    height: 206px;
-    width: 350px;
-  }
-}
-/************************************************************************/
-/************************ Privacy Page Styles ***************************/
-/************************************************************************/
-
-.privacy-date
-{
-	text-align: center;
-}
-
-.privacy-page h1
-{
-	margin: 45px 0px 25px 0px;
-}
-
-/************************************************************************/
-/*************************** Footer Styles ******************************/
-/************************************************************************/
-  footer .row {
-    margin: 15px auto; }
-    
-    footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
-      border-right: 1px solid white; }
-    footer li a, footer li a:hover {
-      color: white;
-      text-decoration: none; }
-#footer {
-  background-color: #0a3153;
-  color: rgba(255, 255, 255, 0.3);
-}
-  
-.footer-links {
-  background-color: #0a3153;
-  color: rgba(255, 255, 255, 0.3); 
-  width: 480px;
-  margin: 0 auto;
-}
-
-footer li {
-  padding: 1px 10px;
-  display: inline-block;
-  float: left; }
-
-/************************************************************************/
-/************************* Footer Media Queries *************************/
-/************************************************************************/ 
-   
-@media (max-width: 768px) {
-    footer li {
-     font-size: 12px; }
-}
-  
-@media (max-width: 480px) {
-	
-     footer .footer-links {
-     float: none;
-     width: auto; }
-     
-    footer li {
-      padding: 10px;
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: center;
-      border-right: none !important; } }
-=======
   #pricing-row3-section .inner-container >div:first-child img
   {
     padding-bottom: 53vw; 
@@ -4278,7 +3795,6 @@ footer li {
   .pitch-section {
     padding-top: 70px;
   }
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 
   .youtube-player {
     height: 236px;
@@ -4286,9 +3802,6 @@ footer li {
   }
 }
 
-<<<<<<< HEAD
-
-=======
 @media (max-width: 480px) {
   .pitch-section {
     padding-top: 60px;
@@ -4312,7 +3825,6 @@ footer li {
 {
   margin: 45px 0px 25px 0px;
 }
->>>>>>> 2ec9c7f47a88d561107171aca5c6b0d42c75e189
 
 /************************************************************************/
 /*************************** Footer Styles ******************************/
