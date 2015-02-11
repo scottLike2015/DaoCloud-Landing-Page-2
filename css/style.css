@@ -1,3 +1,4 @@
+
 /***************** DaoCloud Landing Page Stylesheet *************** */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -3023,6 +3024,7 @@ header.navbar {
   {
     padding: 0px;
   }
+  
 }
 /**********************************************************************/
 /***************** Landing Page Screen Shots Styles ********************/
@@ -3525,32 +3527,6 @@ header.navbar {
   }
 }
 
-.single-title
-{
-	margin: 45px auto;
-}
-
-
-/************************************************************************/
-/***************** Pricing Page  Media Queries **************************/
-/************************************************************************/
-
-@media (min-width: 550px)
-{
-
-	#pricing-row3-section .inner-container
-	{
-		width: 51vw;
-	}
-	.info-col
-	{
-		width: 17vw;
-	}
-	.infog-txt
-	{
-		padding-bottom: 6vw;
-	}
-}
 @media (min-width: 0px) and (max-width: 550px)
 {
 #pricing-row3-section .inner-container
@@ -3567,6 +3543,9 @@ header.navbar {
 }
 @media (min-width: 300px) and (max-width: 550px)
 {
+
+
+
   .infog-txt
   {
     font-size: 3vw;
