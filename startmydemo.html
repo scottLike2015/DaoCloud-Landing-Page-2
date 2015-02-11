@@ -38,46 +38,47 @@
 	$(document).ready(function() {
 	// Posting  Email, First Name, Last Name & Region to DEV API
 
+        // Function to submit Data to api and redirect to relevant regions page
+	// Param: first name, last name, email and regions - data to be sent to api
+	function submitForm(firstname, lastname, email, region )
+	{
+	
+		 // POST JSON data to API
+		 $.ajax({
+			 type: "POST",
+			 url: "https://daodev.daocloud.com/api/v1/regions", 
+			 data: { email : email, firstName: firstname, lastName: lastname, region: region }
+		 }).done(function(msg)
+		 {
+			 if(msg=='OK'){
+        			 // all went well, data was saved to infusion
+        			 //we can redirect to '/prices.html?region=' + reg1				
+				 alert('Yes, the data was sent');
+				 window.location.href="daocloud.com/prices.html?region="+region;
+			 }
+			 else {
+				 //something went wrong
+				 console.dir(msg);
+			 }
+		});	
+			
+	} // End of submitForm Fucntion
+	
 	    //Form 2 - Function when Submit button is clicked on the first (top) Form
 	    $("#submit1").click(function(e)
 	    {
 
 		 e.preventDefault();  // Prevents default button action
-		
- 		
+ 		valName =$("#reg-form1 input[name='name']").val().split(' ');  //Stores Name
+ 		firstName1 = valName[0];
+ 		 lastName1 = valName[1];
+ 	         em1 =$('#reg-form1 input[name="email"]').val();   //Stores Email
+ 	         reg1 = $('#reg-form1 select[name="region"]').val(); // Stores Region	
+		 
+		 	
+		 submitForm(firstName1, lastName1, em1, reg1);	
 
-		valName =$("#reg-form1 input[name='name']").val().split(' ');  //Stores Name
-		firstName1 = valName[0];
-		 lastName1 = valName[1];
-	         em1 =$('#reg-form1 input[name="email"]').val();   //Stores Email
-	         reg1 = $('#reg-form1 input[name="region"]').val(); // Stores Region
-	 
-		// POST JSON data to API
-	    	$.ajax({
-			type: "POST",
-			url: "https://daodev.daocloud.com/api/v1/regions", 
-			data: { email : em1, firstName: firstName1, lastName: lastName1, region: reg1 }
-		}).done(function(msg)
-		{
-			if(msg=='OK'){
-	        		// all went well, data was saved to infusion
-	        		//we can redirect to '/prices.html?region=' + reg1				
-				alert('Yes, the data was sent');
-				window.location.href="daocloud.com/prices.html?region="+reg1;
-			}
-			else {
-				//something went wrong
-				console.dir(msg);
-			}
-		});
 	
-	
-	
-		//Test JSON entry sent if it is valid
-		var obj1 = jQuery.parseJSON(  '{"email": em1, "name" : name1, "region" : reg1} ');
-		console.log('Email: '+obj.email);
-		alert( 'Email: ' +obj1.email+', Name:'+obj1.name );
-		//window.location.href = "http://www.daocloud.com/demo";
 	    });
     
 	    //Form 2 - Fucntion when Submit button is clicked on the second (bottom) Form
@@ -92,32 +93,8 @@
  		 lastName2 = valName[1];
 		 console.log("firstName: "+ lastName2);
 	   	 reg2 = $('#reg-form2 select[name="region"]').val(); //Stores Region
-	 
-     
-	     	// POST JSON data to API
-	    	$.ajax({
-			type: "POST",
-			url: "https://daodev.daocloud.com/api/v1/regions", 
-			data: { email : em2, firstName: firstName2, lastName: lastName2, region: reg2 }
-		}).done(function(msg)
-		{
-			if(msg=='OK'){
-	        		// all went well, data was saved to infusion
-	        		//we can redirect to '/prices.html?region=' + reg1
-	         		alert('Yes, the data was sent');
-				window.location.href="daocloud.com/prices.html?region="+reg1;
-			}
-			else {
-				//something went wrong
-				console.dir(msg);
-			}
-			
-		});
-
-		//Test JSON entry sent if it is valid
-		var obj2 = jQuery.parseJSON(' {"email": em2 "name" : name2, "region" : reg2}' );
-		alert( 'Email: ' +obj2.email+', Name:'+obj2.name );
-		//window.location.href = "http://www.daocloud.com/demo";
+		 
+	         submitForm(firstName2, lastName2, em2, reg2);
 	
 	    });
     	    
