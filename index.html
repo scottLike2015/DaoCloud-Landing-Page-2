@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
         <title>DaoCloud</title>
+
         <!-- General META -->
         <meta charset="utf-8">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -24,54 +25,30 @@
         <meta property="og:type" content="website">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Favicon-->
         <link rel="shortcut icon" type"image/x-icon" href="images/daocloud-favicon.ico">        
+        
         <!-- CSS Imports -->
         <link rel="stylesheet" href="css/style.css">
-        <!--<link rel="stylesheet" href="css/bootstap/bootstrap.css">-->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
 
+        <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	</style>
+
+        <!--Google Analytics Code, in head to capture partial page loads-->
         <script>
-        $(document).ready(function($) {
-            console.log("JQuery works!!!");
-        });     
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-45741411-1', 'auto');
+         ga('send', 'pageview');
         </script>
-	<script>
-	$(document).ready(function() {
-	    function close_accordion_section() {
-	        $('.accordion .accordion-section-title').removeClass('active');
-	        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
-	    }
- 
-	    $('.accordion-section-title').click(function(e) {
-	        // Grab current anchor value
-	        var currentAttrValue = $(this).attr('href');
- 
-	        if($(e.target).is('.active')) {
-	            close_accordion_section();
-	        }else {
-	            close_accordion_section();
- 
-	            // Add active class to section title
-	            $(this).addClass('active');
-	            // Open up the hidden content panel
-	            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
-	        }
- 
-	        e.preventDefault();
-	    });
-	});
-	</script>
-	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-	</script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
-	</script>
     </head>
+
     <body>
-        <!-- Standard button -->
-
-
     <header class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -234,5 +211,50 @@
             </div>
         </footer>
         </div>
+
+        <!--Scripts, at bottom to speed loading-->
+
+        <!--Bootstrap-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <!--Not sure why this is here-->
+        <script>
+        $(document).ready(function($) {
+            console.log("JQuery works!!!");
+        });     
+        </script>
+
+        <!--Accordion-->
+        <script>
+        $(document).ready(function() {
+            function close_accordion_section() {
+                $('.accordion .accordion-section-title').removeClass('active');
+                $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+            }
+     
+            $('.accordion-section-title').click(function(e) {
+                // Grab current anchor value
+                var currentAttrValue = $(this).attr('href');
+     
+                if($(e.target).is('.active')) {
+                    close_accordion_section();
+                }else {
+                    close_accordion_section();
+     
+                    // Add active class to section title
+                    $(this).addClass('active');
+                    // Open up the hidden content panel
+                    $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+                }
+     
+                e.preventDefault();
+            });
+        });
+        </script>
+
+        <!--Mailchimp-->
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+        </script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+        </script>        
     </body>
 </html>
