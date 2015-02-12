@@ -2325,7 +2325,7 @@ h2 {
 }
 
 .subtitle, h3 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: normal;
   line-height: 125%;
 }
@@ -2396,47 +2396,47 @@ section
 /************************ Button/Links Styles **************************/
 /***********************************************************************/
 
-  .elem-wrapper {
-    margin: 20px auto; }
-    button
-    {
-  background-color: inherit;
-    }
+.elem-wrapper {
+  margin: 20px auto;
+}
 
-.btn {
+button {
+  background-color: inherit;
+}
+
+#signup-row .btn a {
   border: 2px solid white;
-  text-align: center;
-  font-weight: 600;
   border-radius: 8px;
-  font-size: 18px;
+  color: #fff;
   cursor: pointer;
-  transition: all .2s linear;
- }
-  .btn-row {
-    padding: 20px;
-    width: 100%; 
-    display: inline-block;
-    border: 3px solid #0a3153;
-  }
- .btn-gh:hover
- {
-    background-color: white !important;
-    color: #0a3153 !important;
-    
- }
- .btn-wh:hover
- {
-  background-color: #0a3153 !important;
-  color: white !important;
- }
-#signup-row .btn {
   display: block;
-  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 40px auto 0px auto;
+  padding: 8px 0px;
+  text-align: center;
+  transition: all .2s linear;
   width: 268px;
-  padding: 5px 0px;
-  margin-top: 40px;
+}
+
+.btn-gh:hover { 
+  background-color: #fff !important;
+  color: #0a3153 !important; 
+  text-decoration: none;
  }
- 
+
+.btn-wh:hover {
+  background-color: #0a3153 !important;
+  color: #fff !important;
+}
+
+.btn-row {
+  padding: 20px;
+  width: 100%; 
+  display: inline-block;
+  border: 3px solid #0a3153;
+}
+
  /***********************************************************************/
  /********************** Button/Links Media Queries *********************/
  /***********************************************************************/
@@ -2559,7 +2559,7 @@ header.navbar {
 }
 
 .nav > li:nth-of-type(1), .nav > li:nth-of-type(2) {
-  top:15px;
+  top: 15px;
 }
 
 .nav > li:nth-of-type(2) a {
@@ -2597,7 +2597,7 @@ header.navbar {
   background-color: #ddd;
 }
 
-.navbar-default .navbar-nav > li >span>a {
+.navbar-default .navbar-nav > li > span > a {
   color: #0a3153;
 }
 
@@ -2688,64 +2688,84 @@ header.navbar {
 }
 
 #mem-row1-section {
-  
   background: url("../images/landing-page-modern.jpg") no-repeat;
   /*height: 42.25vw;*/
   background-size: cover;
   color: white;
-   }
-   #pro-row1-section {
-     background: url("../images/pro-page-modern.jpg") no-repeat;
-     /*height: 32vw;*/
-     color: white;
-     background-size: contain;
-     overflow: visible;
-     padding: 0px;
-      }
-    #pro-row1-section .container
-    {
-      height: 32vw;
-      text-align: center;  /* align the inline(-block) elements horizontally */
-      font: 0/0 a;         /* remove the gap between inline(-block) elements */
-    }
-   
-    #pro-row1-section .container:before {    /* create a full-height inline block pseudo=element */
-        content: ' ';
-        display: inline-block;
-        vertical-align: middle;  /* vertical alignment of the inline element */
-        height: 100%;
-    }
-    #pro-row1-section .container .row {
-      display: inline-block;
-      vertical-align: middle;
-      font-family: Raleway;
-      line-height: 1;      /* <-- reset the font property */
-    }
-   #pro-row1-section #signup-row
-   {
-    height: auto;
-   }
+}
 
-   .pro-signup-wrapper
-   {
+#pro-row1-section {
+  background: url("../images/pro-page-modern.jpg") no-repeat;
+  /*height: 32vw;*/
+  color: white;
+  background-size: contain;
+  overflow: visible;
+  padding: 0px;
+}
+
+#pro-row1-section .container {
+  height: 32vw;
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+   
+#pro-row1-section .container:before {    /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 100%;
+}
+    
+#pro-row1-section .container .row {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Raleway;
+  line-height: 1;      /* <-- reset the font property */
+}
+
+#pro-row1-section #signup-row {
+  height: auto;
+}
+
+.pro-signup-wrapper {
     /* padding: 7.25vw 0px; */
     /* padding: 9.8vw 0px;*/
-   }
-#signup-row  h1, #signup-row  h2, #signup-row  h3, #signup-row h4, #signup-row span, #signup-row  button
-{
+}
+
+#signup-row  h1, #signup-row  h2, #signup-row  h3, #signup-row h4, #signup-row span, #signup-row button {
  color: white;
 }
 
-#row1-section  h4
-{
+#signup-row h4 {
+  margin-top: 16px;
+}
+
+#signup-row h4 a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-weight: normal;
+  padding-bottom: 2px;
+  text-decoration: none; /* Bootstrap override */
+  transition: all .2s linear;
+}
+
+#signup-row h4 a:hover {
+  border-bottom: 1px solid #ecebed;
+  color: #ecebed;
+  text-decoration: none; /* Bootstrap override */
+}
+
+#row1-section h4 {
   margin: 18px 0px;
 }
 
 .inner-container {
-  margin: 0px auto; }
+  margin: 0px auto; 
+}
 
-  #signup-row {
-    height: 37vw; }
+#signup-row {
+  height: 37vw; 
+}
 
 .scrolldown-txt {
   top: 90%;
@@ -2755,11 +2775,16 @@ header.navbar {
   width: 54%;
   font-family: Raleway;
   color: #0a3153;
-  font-weight: bold; }
-  .scrolldown-txt span:nth-of-type(1) {
-    float: left; }
-  .scrolldown-txt span:nth-of-type(2) {
-    float: right; }
+  font-weight: bold; 
+}
+
+.scrolldown-txt span:nth-of-type(1) {
+  float: left; 
+}
+
+.scrolldown-txt span:nth-of-type(2) {
+  float: right; 
+}
     
 /*************************************************************************/
 /************** Member Signup/Request Media Queries **********************/
@@ -2836,9 +2861,6 @@ header.navbar {
     padding-top: 0px;
   }
 
-  #signup-row .btn {
-    margin-top: 0px;
-  }
 @media (min-width: 350px) and (max-width: 500px){    
       #pro-row1-section .container
       {
@@ -2883,44 +2905,44 @@ header.navbar {
 /******************* Member Features List Section Styles *********************/
 /*****************************************************************************/
 
-#ftrslist-section .container{
-  top:0px;
+#ftrslist-section .container {
+  top: 0px;
 }
-.ftrslist-content
-{
+
+.ftrslist-content {
   width: 301px;
   margin: 0 auto;
 }
-.ftr-list-img
-{
+
+.ftr-list-img {
   float: left;
   padding-right: 12px;
 }
-.svg-color
-{
+
+.svg-color {
   fill: red;
 }
 
-.ftr-list-txt
-{
-  padding: 16px 0px;
-  font-size: 17px;
+.ftr-list-txt {
+  padding: 21px 0px;
+  font-size: 18px;
 }
 
-
-.icon-person-txt
-{
+.icon-person-txt {
   vertical-align: middle;
   display: inline-block;
 }
 
-.icon-person-wrapper
-{
+#ftrslist-row img {
+  height: 130px;
+}
+
+.icon-person-wrapper {
   text-align: center;
   display: inline-block;
 }
-.icon-person
-{
+
+.icon-person {
   padding: 1.6vw;
   height: 6.88vw;
   min-height: 60px;
@@ -2933,6 +2955,7 @@ header.navbar {
   max-height: 115px;
   */
 }
+
 /*************************************************************************/
 /************** Landing Page Features List Media Queries *****************/
 /*************************************************************************/
@@ -3048,40 +3071,55 @@ header.navbar {
 /************* Landing Page Subscribe Section Styles *************/
 /*****************************************************************/
 #sbscrb-row {
+  margin: 0 auto; 
   position: relative;
-  margin: 0 auto; }
+}
 
-  #sbscrb-row .scrb-frm-ctr:nth-of-type(1) {
-    margin-top: 10px; }
-  #sbscrb-row h3 {
-    text-align: center;
-    font-weight: normal;
-    margin: 0vw 0vw; }
-  #sbscrb-row .em-input { 
-    line-height: 1.4;
-    width: 100%;
-    display: block;
-    padding: 12px !important;
-    border: 3px solid #0a3153;
-    font-family: Raleway;
+#sbscrb-row .scrb-frm-ctr:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+#sbscrb-row h3 {
+  font-weight: normal;
+  margin: 0vw 0vw; 
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#sbscrb-row .em-input { 
+  border: 3px solid #0a3153;
+  border-radius: 8px;
+  display: block;
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 12px !important;
+  margin: 0 auto;
+  text-align: center;
+  width: 450px;
  }
-    #sbscrb-row input::-webkit-input-placeholder {
-      text-align: center; }
-    #sbscrb-row input:-moz-placeholder {
-      text-align: center; }
-    #sbscrb-row input::-moz-placeholder {
-      text-align: center; }
-    #sbscrb-row input:-ms-input-placeholder {
-      text-align: center; }
-  #sbscrb-row .scrb-btn-ctr {
-    width: 82%; }
-   #sbscrb-row input[type="submit"] 
-   {
-     background: white;
-     line-height: 1;
-     font-size: 18px;
-     font-family: Raleway;
-   }
+
+#sbscrb-row input::-webkit-input-placeholder, #sbscrb-row input:-moz-placeholder, #sbscrb-row input::-moz-placeholder, #sbscrb-row input:-ms-input-placeholder {
+  text-align: center;
+}
+
+#sbscrb-row .scrb-btn-ctr {
+  width: 250px;
+}
+
+.scrb-btn-ctr .btn-row {
+  padding: 15px 30px;
+}
+
+#sbscrb-row input[type="submit"]  {
+  background: white;
+  border-radius: 8px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  transition: all .2s linear;
+}
 
 
 /*************************************************************************/
@@ -3983,14 +4021,26 @@ header.navbar {
 /************************************************************************/
 /*************************** Footer Styles ******************************/
 /************************************************************************/
-  footer .row {
-    margin: 15px auto; }
+footer .row {
+  margin: 15px auto; 
+}
     
-    footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
-      border-right: 1px solid white; }
-    footer li a, footer li a:hover {
-      color: white;
-      text-decoration: none; }
+footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
+  border-right: 1px solid white; 
+}
+
+footer li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
 #footer {
   background-color: #0a3153;
   color: rgba(255, 255, 255, 0.3);
@@ -4006,7 +4056,8 @@ header.navbar {
 footer li {
   padding: 1px 10px;
   display: inline-block;
-  float: left; }
+  float: left;
+}
 
 /************************************************************************/
 /************************* Footer Media Queries *************************/

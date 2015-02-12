@@ -32,84 +32,22 @@
         <link rel="stylesheet" href="../css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
 
-        <!--JS-->
+        <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
 
-	$(document).ready(function() {
-	// Posting  Email, First Name, Last Name & Region to DEV API
+        <!--Google Analytics Code, in head to capture partial page loads-->
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        // Function to submit Data to api and redirect to relevant regions page
-	// Param: first name, last name, email and regions - data to be sent to api
-	function submitForm(firstname, lastname, email, region )
-	{
-	
-		 // POST JSON data to API
-		 $.ajax({
-			 type: "POST",
-			 url: "https://daodev.daocloud.com/api/v1/regions", 
-			 data: { email : email, firstName: firstname, lastName: lastname, region: region }
-		 }).done(function(msg)
-		 {
-			 if(msg=='OK'){
-        			 // all went well, data was saved to infusion
-        			 //we can redirect to '/prices.html?region=' + reg1				
-				 alert('Yes, the data was sent');
-				 window.location.href="daocloud.com/prices.html?region="+region;
-			 }
-			 else {
-				 //something went wrong
-				 console.dir(msg);
-			 }
-		});	
-			
-	} // End of submitForm Fucntion
-	
-	    //Form 2 - Function when Submit button is clicked on the first (top) Form
-	    $("#submit1").click(function(e)
-	    {
-
-		 e.preventDefault();  // Prevents default button action
- 		valName =$("#reg-form1 input[name='name']").val().split(' ');  //Stores Name
- 		firstName1 = valName[0];
- 		 lastName1 = valName[1];
- 	         em1 =$('#reg-form1 input[name="email"]').val();   //Stores Email
- 	         reg1 = $('#reg-form1 select[name="region"]').val(); // Stores Region	
-		 
-		 	
-		 submitForm(firstName1, lastName1, em1, reg1);	
-
-	
-	    });
-    
-	    //Form 2 - Fucntion when Submit button is clicked on the second (bottom) Form
-	    $("#submit2").click(function(e){	
-	    
-		 e.preventDefault(); // Prevents default button action
-	 	
-		 em2 =$('#reg-form2 input[name="email"]').val();   //Stores Email
- 		valName =$("#reg-form2 input[name='name']").val().split(' ');  //Stores Name
- 		firstName2 = valName[0];
-		console.log("firstName: "+ firstName2);
- 		 lastName2 = valName[1];
-		 console.log("firstName: "+ lastName2);
-	   	 reg2 = $('#reg-form2 select[name="region"]').val(); //Stores Region
-		 
-	         submitForm(firstName2, lastName2, em2, reg2);
-	
-	    });
-    	    
-	});
-     
-
-	     
-        </script>
+         ga('create', 'UA-45741411-1', 'auto');
+         ga('send', 'pageview');
+        </script>   
     </head>
-    <body>
-        <!-- Standard button -->
 
-	
+    <body>
     <header class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -1127,9 +1065,9 @@
                 <div class="row">
                     <div id="footer-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
                         <div class="footer-links">
-                           <li><a href="terms">Terms &amp; Conditions</a></li>
-                           <li><a href="privacy">Privacy Policy</a></li>
-                           <li><a href="vision">Investors</a></li>
+                           <li><a href="../terms">Terms &amp; Conditions</a></li>
+                           <li><a href="../privacy">Privacy Policy</a></li>
+                           <li><a href="../vision">Investors</a></li>
                            <li><a href="mailto:team@daocloud.com?Subject=Daocloud%2C%20I%27d%20Love%20To%20Get%20In%20Touch%20With%20You%20Guys%21">Contact Daocloud</a></li>
                         </div>            
 
@@ -1140,5 +1078,76 @@
             </div>
         </footer>
         </div>
+
+        <!--Bootstrap-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        // Posting  Email, First Name, Last Name & Region to DEV API
+        $(document).ready(function() {
+        
+        // Function to submit Data to api and redirect to relevant regions page
+        // Param: first name, last name, email and regions - data to be sent to api
+        function submitForm(firstname, lastname, email, region )
+        {
+        
+             // POST JSON data to API
+             $.ajax({
+                 type: "POST",
+                 url: "https://daodev.daocloud.com/api/v1/regions", 
+                 data: { email : email, firstName: firstname, lastName: lastname, region: region }
+             }).done(function(msg)
+             {
+                 if(msg=='OK'){
+                         // all went well, data was saved to infusion
+                         //we can redirect to '/demo?region=' + reg1 (/demo is the pricing results page)
+                     alert('Yes, the data was sent');
+                     window.location.href="daocloud.com/demo?region="+region;
+                 }
+                 else {
+                     //something went wrong
+                     console.dir(msg);
+                 }
+            }); 
+                
+        } // End of submitForm Fucntion
+        
+            //Form 2 - Function when Submit button is clicked on the first (top) Form
+            $("#submit1").click(function(e)
+            {
+
+             e.preventDefault();  // Prevents default button action
+            valName =$("#reg-form1 input[name='name']").val().split(' ');  //Stores Name
+            firstName1 = valName[0];
+             lastName1 = valName[1];
+                 em1 =$('#reg-form1 input[name="email"]').val();   //Stores Email
+                 reg1 = $('#reg-form1 select[name="region"]').val(); // Stores Region   
+             
+                
+             submitForm(firstName1, lastName1, em1, reg1);  
+
+        
+            });
+        
+            //Form 2 - Fucntion when Submit button is clicked on the second (bottom) Form
+            $("#submit2").click(function(e){    
+            
+             e.preventDefault(); // Prevents default button action
+            
+             em2 =$('#reg-form2 input[name="email"]').val();   //Stores Email
+            valName =$("#reg-form2 input[name='name']").val().split(' ');  //Stores Name
+            firstName2 = valName[0];
+            console.log("firstName: "+ firstName2);
+             lastName2 = valName[1];
+             console.log("firstName: "+ lastName2);
+             reg2 = $('#reg-form2 select[name="region"]').val(); //Stores Region
+             
+                 submitForm(firstName2, lastName2, em2, reg2);
+        
+            });
+                
+        });   
+        </script>
+
     </body>
 </html>
