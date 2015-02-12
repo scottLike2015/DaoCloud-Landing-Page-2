@@ -4008,14 +4008,17 @@ header.navbar {
 /************************ Privacy Page Styles ***************************/
 /************************************************************************/
 
-.privacy-date
-{
+.privacy-date {
   text-align: center;
 }
 
-.privacy-page h1
-{
+.privacy-page h1 {
   margin: 45px 0px 25px 0px;
+}
+
+.privacy-page h2 {
+  line-height: 130%;
+  padding: 25px 0px 15px;
 }
 
 /************************************************************************/
