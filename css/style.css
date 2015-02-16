@@ -2345,7 +2345,7 @@ h2 {
 @media (max-width: 768px) {
   h1 {
     font-size: 20px;
-    line-height: 19px; }
+    line-height: 130%; }
 
   h2 {
     font-size: 28px;
@@ -2474,33 +2474,33 @@ button {
    margin-top: 0px;
  }
  
- .btn-form
-  {
-       font-size: 12px !important;
-      line-height: 1.4;
- 
+ .btn-form {
+    font-size: 12px !important;
+    line-height: 1.4;
+  }
 }
-}
+
 @media (min-width: 500px) and (max-width: 1150px){
-  .btn-long
-  {
+  .btn-long {
     float: none;
     width: 70%;
     margin: 0 auto;
     min-width: 149px;
   }
 }
+
 @media (min-width: 0px) and (max-width: 500px){
-  .btn-long
-  {
+  .btn-long {
     float: none;
     width: 75%;
     margin: 0 auto;
     min-width: 149px;
   }
 }
+
 input[type="submit"] {
-  line-height: 3px; }
+  line-height: 3px; 
+}
 
 .pro-signup-wrapper .btn, .pro-signup-wrapper .btn:hover {
   border: none;
@@ -3185,132 +3185,116 @@ header.navbar {
   height: 425px;
   background-size: cover;
   color: white;
-   }
-#reg-row1-section h3
-{
-  margin-top: 40px;
 }
-
 
 /**************** Regions Form Section Sytles **************** */
 
-.reg-form
-{
+#reg-row2-section .reg-form , #reg-row5-section .reg-form {
   padding: 25px 0px;
   background-color: #DAEEFC;
   border-radius: 12px;
   border: 1px solid #0A3153;
+}
 
+#reg-row2-section .reg-form {
+  margin-top: -220px;
+  height: 390px;  
 }
-#reg-row2-section .reg-form
-{
-    margin-top: -210px;  
+
+#reg-row5-section  {
+  padding-bottom: 70px;
 }
-#reg-row5-section 
-{
-    padding-bottom: 70px;
+
+#reg-row5-section .reg-form {
+  margin-top: 45px;
 }
-#reg-row5-section .reg-form
-{
-    margin-top: 45px;
-}
-.reg-form .elem-wrapper
-{ padding: 15px;
+
+.reg-form .elem-wrapper { 
+  padding: 15px;
   margin: 0px auto;
 }
-.reg-form .form-control
-{
-  /*padding: 12px !important;*/
+
+.reg-form .form-control {
+  padding: 12px !important;
   border: 2px solid #0a3153;
   border-radius: 6px;
   font-size: 18px;
-  font-size: 1.25vw;
   width: 100%;
   height: inherit;
   height: 55px;
 }
-.reg-form input
-{
+
+.reg-form input {
   color: #0a3153 !important;
 }
-.form-heading
-{
+
+.form-heading {
   padding-bottom: 45px !important;
   font-weight: normal
 }
-.frm-btn-con
-{
+
+.frm-btn-con {
   width: 25%;
   min-width: 150px;
 }
-.btn-form
-{
+
+.btn-form {
    background-color: #0a3153;
    font-size: 1.75vw ;
    font-weight: 600; 
    color: white;
    height: 58px !important;
+   transition: all .2s linear;
 }
 
-.btn-form h3
-{
+.btn-form:hover {
+  background-color: #104b7f;
+  border: 2px solid #104b7f;
+}
+
+.btn-form h3 {
   font-weight: normal;
 }
 
-#frm-btm-btn
-{
+#frm-btm-btn {
   margin-bottom: -70px;
 }
-.reg-form input:-ms-input-placeholder
-{
+
+.reg-form input:-ms-input-placeholder, .reg-form input::-moz-placeholder, .reg-form: input-moz-placeholder, .reg-form input::-webkit-input-placeholder {
   color: #0a3153 !important;
-}
-.reg-form input::-moz-placeholder
-{
-  color: #0a3153 !important;
-}
-.reg-form: input-moz-placeholder
-{
-  color: #0a3153 !important;
-}
-.reg-form input::-webkit-input-placeholder
-{
-    color: #0a3153 !important;
 }
 
-.reg-form select
-{
-    background: #fff url('../images/arrows.png')no-repeat 98.75% 6px;
-    text-align: center;
-    font-size : 1.75px;
-    color: #0a3153;
+.reg-form select {
+    background: #fff url('../images/arrows.png') no-repeat 98.75% 6px;
+    text-align: left;
+    font-size: 1.75px;
+    color: #999999;
+    padding-left: 12px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    padding-left: 28.5%;
+}
 
-}
-.send-msg-reg
-{
-  position: absolute;
-  right: -114px;
-  top: 21px;
-  font-size: 12px;
-  color: #23527c;
-  text-decoration: none;
-  cursor: pointer;
-}
-.send-msg-reg:hover
-{
+.send-msg-reg {
   color: #0a3153;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: 2px;
+  right: 0px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.send-msg-reg:hover {
   text-decoration: none;
 }
-#reg-row2-section .reg-form
-{
+
+#reg-row2-section .reg-form {
   margin-bottom: 25px;
 }
-.listrow-txt
-{
+
+.listrow-txt {
   font-size: 26px;
   font-size: 1.75vw;
   font-weight: bold;
@@ -3320,46 +3304,52 @@ header.navbar {
   text-align: center;
   vertical-align: text-top;
 }
-.ftrd-img,.partners-img
-{
+
+.ftrd-img,.partners-img {
   padding: 27px;
   padding-bottom: 0px;
 }
-#hercampus
-{
+
+#hercampus {
   padding-left: 100px;
 }
 
+#reg-row4-section {
+  background-color: #0a3153;
+  color: white;
+}
 
-/**************** Region Section Sytles ******************/
-.reg-col
-{
+#reg-row4-section h1 {
+  color: white;
+}
+
+.reg-col {
   text-align: center;
 }
-#reg-row3-section
-{
+
+#reg-row3-section {
   padding: 80px 0px;
 }
-#reg-row3-section .title
-{
+
+#reg-row3-section .title {
   margin-bottom: 65px;
 }
-#reg-row3-section .row
-{
+
+#reg-row3-section .row {
   font-size: 1.75vw;
   text-align: center;
 }
-.reg-col span
-{
+
+.reg-col span {
   display:block;
   line-height: 2.2vw;
 }
-.reg-block
-{
+
+.reg-block {
   padding: 15px 0px;
 }
-.reg-block span:first-child
-{
+
+.reg-block span:first-child {
   font-weight: bold
 }
 
@@ -3367,102 +3357,103 @@ header.navbar {
 /************************ Regions Page Media Queries *********************/
 /*************************************************************************/
 
-@media  (max-width: 996px) {
-.reg-form .form-control
-{
-  font-size: 12px !important;
-}
-.reg-form select
-{
-  padding-left: 20.5%;
+/* col-md breakpoint */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .partners-img {
+    padding: 10px;
+  }
+
+  .listrow-txt {
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    padding-top: 35px;
+  }
+
+  #reg-row2-section .row-list {
+    margin-left: 12%;
+  }  
 }
 
+@media (max-width: 996px) {
+  .reg-form .form-control {
+    font-size: 12px !important;
+  }
+
+  #reg-row2-section .reg-form {
+    margin-top: -250px;
+    height: 370px;
+  }
 
 }
-@media  (max-width: 768px) {
 
-  .reg-form select
-   {
-     padding-left: 22%;
-    }
-  .reg-form .row div > div:nth-of-type(4)
-{
-  float: none;
-}
-#reg-row3-section .row
-{
-  font-size: 14px;
-}
+@media (max-width: 768px) {
+  .reg-form .row div > div:nth-of-type(4) {
+    float: none;
+  }
 
-.reg-col span
-{
-  display:block;
-  line-height: 17px;
-}
-  .ftrd-img, .partners-img, .listrow-txt
-  {
+  section#reg-row1-section {
+    padding-top: 35px;
+  }
+
+  #reg-row3-section .row {
+    font-size: 14px;
+  }
+
+  .reg-col span {
+    display:block;
+    line-height: 17px;
+  }
+  
+  .ftrd-img, .partners-img, .listrow-txt {
     font-size: 17px;
     margin: 0 auto;
     display: block;
     max-width: 100%;
   }
- #hercampus
- {
+ 
+  #hercampus {
    padding-left:  0px;
- }
-  
-}
-@media  (min-width: 520px) and (max-width: 768px){
-        .reg-form input[name="phone"]
-         {
-           text-align: center;
-          }
-}
-@media  (min-width: 520px) and (max-width: 720px){
-        .reg-form select
-         {
-           padding-left: 12.5%;
-          }
+  }
+
+  #reg-row2-section .reg-form {
+    padding-top: 25px;
+    height: 430px;
+    margin-top: -250px;
+  }
+
+  #reg-row2-section .listrow-txt {
+    padding-top: 35px;
+  }
+
+  #reg-row2-section .form-heading {
+    padding-bottom: 25px !important;
+  }
 }
 
-@media  (max-width: 520px) {
-  .reg-col
-  {
-    
+@media (max-width: 535px) {
+  .reg-col {
     width: 100%;
   }
-#regions-page .reg-form .inner-container div
-{
-  width: 100%;
-}
-.reg-form select
-{
-  padding-left: 6px;
-}
-.send-msg-reg
-{
-  display: block;
-  position: relative;
-  top: 2px;
-  right: 0px;
-  text-align: right;
-}
-#regions-page .reg-form .frm-btn-con
-{
-  width: 75% !important;
-}
 
+  #regions-page .reg-form .inner-container div {
+    width: 100%;
   }
 
-#reg-row4-section
-{
-  background-color: #0a3153;
-  color: white;
+  #regions-page .reg-form .frm-btn-con {
+    width: 75% !important;
+  }
+
+  #reg-row2-section .reg-form {
+    height: 520px;
+  }
+
+  #reg-row1-section h3 {
+    font-style: 20px;
+  }
 }
-#reg-row4-section h1
-{
-  color: white;
-}
+
 
 /************************************************************************/
 /************************  Pricing Page Styles   ************************/
@@ -4033,7 +4024,7 @@ footer li:nth-of-type(1), footer li:nth-of-type(2), footer li:nth-of-type(3) {
   border-right: 1px solid white; 
 }
 
-footer li a {
+footer li a, footer li a:visited {
   color: white;
   text-decoration: none;
 }
