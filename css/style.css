@@ -3482,37 +3482,34 @@ header.navbar {
     width: 100%;
     height: 100%;
 }
-#pricing-row2-section .col-xs-12 > h1
-{
+#pricing-row2-section .col-xs-12 > h1 {
   margin: 45px auto;
 }
-#pricing-row3-section .inner-container
-{
+
+#pricing-row3-section .inner-container {
   width: 57vw;
   margin: 0 auto;
 }
-.info-col
-{
+
+.info-col {
   width: 19vw;
   float: left;
 }
-#pricing-row3-section .inner-container >div:first-child img
-{
+
+#pricing-row3-section .inner-container >div:first-child img {
   padding-bottom: 4vw;
   display: block;
   width: 100%;  
 }
 
-#pricing-row3-section .inner-container >div:first-child img:last-child
-{
+#pricing-row3-section .inner-container >div:first-child img:last-child {
   padding-bottom: 0px;
 	padding-bottom: 4vw;
 	display: block;
 	width: 100%;	
 }
 
-#pricing-row3-section .inner-container >div:first-child img:last-child
-{
+#pricing-row3-section .inner-container >div:first-child img:last-child {
 	padding-bottom: 0px;
 }
 
@@ -3524,21 +3521,57 @@ header.navbar {
   text-align: left;
 }
 
-.arrowg
-{
+.arrowg {
   padding-top: 5vw;
-    
 }
-.arrowg img
-{
+
+.arrowg img {
   width: 23%; 
   margin: 0 auto;
   display: block;
 }
 
-.single-title
-{
+.single-title {
   margin: 45px auto;
+}
+
+#pricing-row2-section #rscrs-row {
+  padding-bottom: 35px;
+}
+
+#rscrs-row h1 {
+  font-size: 36px;
+}
+
+#pricing-row3-section .svg-color {
+  fill: red;
+}
+
+#pricing-row2-section, #pricing-row3-section {
+  padding: 0;
+}
+
+.single-title {
+  margin: 35px auto 15px auto;
+}
+
+#pricing-row3-section .reg-form {
+  padding: 25px 0px;
+  background-color: #DAEEFC;
+  border-radius: 12px;
+  border: 1px solid #0A3153;
+  margin: 25px 0 45px;
+}
+
+#pricing-row3-section .reg-form .form-control {
+  padding: 12px !important;
+  border: 2px solid #0a3153;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 50%;
+  height: inherit;
+  height: 55px;
+  margin: 0 auto;
 }
 
 
@@ -3546,216 +3579,167 @@ header.navbar {
 /***************** Pricing Page  Media Queries **************************/
 /************************************************************************/
 
-@media (min-width: 550px)
-{
-
-  #pricing-row3-section .inner-container
-  {
+@media (min-width: 550px) {
+  #pricing-row3-section .inner-container {
     width: 51vw;
   }
-  .info-col
-  {
+  
+  .info-col {
     width: 17vw;
   }
-  .infog-txt
-  {
+
+  .infog-txt {
     padding-bottom: 6vw;
   }
 }
 
-
-.single-title
-{
-	margin: 45px auto;
-}
-
-
-@media (min-width: 550px)
-{
-
-	#pricing-row3-section .inner-container
-	{
+@media (min-width: 550px) {
+  #pricing-row3-section .inner-container {
 		width: 51vw;
 	}
-	.info-col
-	{
+	
+  .info-col {
 		width: 17vw;
 	}
-	.infog-txt
-	{
+
+	.infog-txt {
 		padding-bottom: 6vw;
 	}
 }
 
 @media (min-width: 0px) and (max-width: 550px) {
-#pricing-row3-section .inner-container
-{
-  width: 80vw;
-  margin: 0 auto;
-}
-.info-col
-{
-  width: 26.6vw;
-  float: left;
+  #pricing-row3-section .inner-container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .info-col {
+    width: 26.6vw;
+    float: left;
+  }
 }
 
-}
-@media (min-width: 300px) and (max-width: 550px)
-{
-
-
-  .infog-txt
-  {
+@media (min-width: 300px) and (max-width: 550px) {
+  .infog-txt {
     font-size: 3vw;
   }
-  .arrowg
-  {
+  
+  .arrowg {
     padding-top: 5vw;
-    
   }
-  .arrowg img
-  {
+  
+  .arrowg img {
     width: 28%; 
     margin: 0 auto;
     display: block;
   }
 
-  element.style {
-  }
   #pricing-row3-section .inner-container >div:first-child img {
     padding-bottom: 12vw;
-  }
-  
+  }  
 }
-@media (max-width: 300px) 
-	.infog-txt
-	{
+
+@media (max-width: 300px) { 
+	.infog-txt {
 		font-size: 3vw;
 	}
-	.arrowg
-	{
+
+	.arrowg {
 		padding-top: 5vw;
-		
 	}
-	.arrowg img
-	{
+
+	.arrowg img {
 		width: 28%;	
 		margin: 0 auto;
 		display: block;
 	}
-	element.style {
-	}
+	
 	#pricing-row3-section .inner-container >div:first-child img {
 		padding-bottom: 12vw;
 	}
-	
 }
-@media (max-width: 300px) 
-{
-.infog-txt
-{
-	font-size: 10px;
-}
-}
-@media (min-width: 215px) and (max-width: 300px) 
-{
-.infog-txt
-{
-  font-size: 10px;
-}
-}
-@media (min-width: 215px) and (max-width: 300px) 
 
-  
+@media (max-width: 300px)  {
+  .infog-txt {
+    font-size: 10px;
+  }
 }
-@media (min-width: 0px) and (max-width: 300px) 
 
-{
-  #pricing-row3-section .inner-container
-  {
+@media (min-width: 215px) and (max-width: 300px) {
+  .infog-txt {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  #pricing-row3-section .inner-container {
     width: 80vw;
     margin: 0 auto;
   }
 
-  #pricing-row3-section .inner-container >div:first-child img
-  {
+  #pricing-row3-section .inner-container >div:first-child img {
     padding-bottom: 53vw; 
   }
 
-  .arrowg
-  {
+  .arrowg {
     padding-top: 5vw;
-    
   }
-  .arrowg img
-  {
-    width: 56%; 
 
+  .arrowg img {
+    width: 56%; 
   }
-  .infog-txt
-  {
+
+  .infog-txt {
     font-size: 5vw; 
   }
-  
 }
-@media (min-width: 170px) and (max-width: 215px) 
-{
-  .arrowg img
-  {
+
+@media (min-width: 170px) and (max-width: 215px) {
+  .arrowg img {
     width: 56%; 
+  }
 
-	.arrowg
-	{
+	.arrowg {
 		padding-top: 5vw;
-		
 	}
-	.arrowg img
-	{
-		width: 56%;	
 
+  .arrowg img {
+		width: 56%;	
 	}
-	.infog-txt
-	{
+
+	.infog-txt {
 		font-size: 5vw; 
 	}
-	
 }
-@media (min-width: 170px) and (max-width: 215px) 
-{
-	.arrowg img
-	{
-		width: 56%;	
 
+@media (min-width: 170px) and (max-width: 215px) {
+	.arrowg img {
+		width: 56%;	
 	}
+
 	#pricing-row3-section .inner-container >div:first-child img
 	{
 		padding-bottom: 53vw;	
 	}
 }
 
-@media (min-width: 0px) and (max-width: 170px) 
-{
-	.arrowg 
-	{
+@media (min-width: 0px) and (max-width: 170px) {
+	.arrowg {
 		display: none;	
-
 	}
-	.info-col
-	{
-		
+
+	.info-col {
 		width: 65%;
 		margin: 0 auto;
 	}
-	.container-fluid
-	{
+
+	.container-fluid {
 		width: 72% ;
 	}
-	#pricing-row3-section .row
-	{
-		margin-left: 0px;
-		
-	}
 
+	#pricing-row3-section .row {
+		margin-left: 0px;		
+	}
 }
 
 /******************** About Section Styles ************************** */
