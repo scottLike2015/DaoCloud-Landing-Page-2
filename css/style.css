@@ -3795,12 +3795,6 @@ header.navbar {
 	margin: 25px 0px;
 	margin-bottom: 45px;
 }
-#about-row4-section::after
-{
-	content:" ";
-	display: block;
-	padding-bottom: 37.65vw; 
-}
 
 
 /******************************************************************* */
@@ -3841,69 +3835,63 @@ header.navbar {
 /************************ About Section Styles **************************/
 /************************************************************************/
 
-#about-row1-section h1
-{
+#about-row1-section h1 {
   margin-bottom: 20px;
 }
 
-#about-row2-section p
-{
+#about-row2-section p {
   font-size: 16px;
 }
-#about-row1-section h3
-{
+
+#about-row1-section h3 {
   font-weight: normal;
 }
-#about-row2-section .col-lg-4{
+
+#about-row2-section .col-lg-4 {
   padding: 0px 30px;
 }
 
-#about-row2-section img
-{
+#about-row2-section img {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
 }
 
-
-.team-row img
-{
+.team-row img {
   width: 75%;
   margin: 0 auto;
   max-width: 330px;
-  
 }
-#about-content img
-{
+
+#about-content img {
   border: 1px solid #0a3153;
   border-radius: 450px;
 }
-#about-row2-section h1, .team-row  h1
-{
+
+#about-row2-section h1, .team-row  h1 {
   margin-bottom: 30px;
-  
 }
-#about-row2-section h3, .team-row h3
-{
+
+#about-row2-section h3, .team-row h3 {
   font-weight: 600;
-  
 }
-#about-row2-section h3
-{
+
+#about-row2-section h3 {
   margin: 25px 0px;
 }
-.team-row h3
-{
+
+.team-row h3 {
   margin: 25px 0px;
   margin-bottom: 45px;
 }
-#about-row4-section::after
-{
-  content:" ";
-  display: block;
-  padding-bottom: 37.65vw; 
+
+.center-text {
+  text-align: center;
 }
 
+#about-content h2 {
+  padding-bottom: 35px;
+}
 
 /************************************************************************/
 /************************ Investor Page Styles **************************/
