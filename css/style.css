@@ -3113,6 +3113,9 @@ header.navbar {
   transition: all .2s linear;
 }
 
+#ftrslist-section .ftr-list-txt {
+  padding-top: 25px;
+}
 
 /*************************************************************************/
 /*********************** Pro Page Page Sytles ****************************/
