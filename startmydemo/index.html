@@ -1090,14 +1090,14 @@
              // POST JSON data to API
              $.ajax({
                  type: "POST",
-                 url: "https://beta.daocloud.com/api/v1/regions", 
-                 data: { email : email, firstName: firstname, lastName: lastname, region: region }
+                 url:  "https://beta.daocloud.com/api/v1/regions", 
+                 data: { firstName: firstname, lastName: lastname, email : email, phone: phone, region: region }
              }).done(function(msg)
              {
                  if(msg=='OK'){
                          // all went well, data was saved to infusion
                          //we can redirect to '/demo?region=' + reg1 (/demo is the pricing results page)
-                     window.location="../demo/index.html?region="+region+"&firstname="+firstname+"&lastname="+lastname+"&email="+email;
+                     window.location="../demo/index.html?firstname="+firstname+"&lastname="+lastname+"&email="+email+"&phone="+phone+"&region="+region;
                  }
                  else {
                      //something went wrong
@@ -1116,7 +1116,6 @@
 
                 submitForm(name[0], name[1], email, phone, region);
             });
-
         });
         </script>
 
