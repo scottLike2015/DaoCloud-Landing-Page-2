@@ -32,84 +32,22 @@
         <link rel="stylesheet" href="../css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
 
-        <!--JS-->
+        <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
 
-	$(document).ready(function() {
-	// Posting  Email, First Name, Last Name & Region to DEV API
+        <!--Google Analytics Code, in head to capture partial page loads-->
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        // Function to submit Data to api and redirect to relevant regions page
-	// Param: first name, last name, email and regions - data to be sent to api
-	function submitForm(firstname, lastname, email, region )
-	{
-	
-		 // POST JSON data to API
-		 $.ajax({
-			 type: "POST",
-			 url: "https://daodev.daocloud.com/api/v1/regions", 
-			 data: { email : email, firstName: firstname, lastName: lastname, region: region }
-		 }).done(function(msg)
-		 {
-			 if(msg=='OK'){
-        			 // all went well, data was saved to infusion
-        			 //we can redirect to '/prices.html?region=' + reg1				
-				 alert('Yes, the data was sent');
-				 window.location.href="daocloud.com/prices.html?region="+region;
-			 }
-			 else {
-				 //something went wrong
-				 console.dir(msg);
-			 }
-		});	
-			
-	} // End of submitForm Fucntion
-	
-	    //Form 2 - Function when Submit button is clicked on the first (top) Form
-	    $("#submit1").click(function(e)
-	    {
-
-		 e.preventDefault();  // Prevents default button action
- 		valName =$("#reg-form1 input[name='name']").val().split(' ');  //Stores Name
- 		firstName1 = valName[0];
- 		 lastName1 = valName[1];
- 	         em1 =$('#reg-form1 input[name="email"]').val();   //Stores Email
- 	         reg1 = $('#reg-form1 select[name="region"]').val(); // Stores Region	
-		 
-		 	
-		 submitForm(firstName1, lastName1, em1, reg1);	
-
-	
-	    });
-    
-	    //Form 2 - Fucntion when Submit button is clicked on the second (bottom) Form
-	    $("#submit2").click(function(e){	
-	    
-		 e.preventDefault(); // Prevents default button action
-	 	
-		 em2 =$('#reg-form2 input[name="email"]').val();   //Stores Email
- 		valName =$("#reg-form2 input[name='name']").val().split(' ');  //Stores Name
- 		firstName2 = valName[0];
-		console.log("firstName: "+ firstName2);
- 		 lastName2 = valName[1];
-		 console.log("firstName: "+ lastName2);
-	   	 reg2 = $('#reg-form2 select[name="region"]').val(); //Stores Region
-		 
-	         submitForm(firstName2, lastName2, em2, reg2);
-	
-	    });
-    	    
-	});
-     
-
-	     
-        </script>
+         ga('create', 'UA-45741411-1', 'auto');
+         ga('send', 'pageview');
+        </script>   
     </head>
-    <body>
-        <!-- Standard button -->
 
-	
+    <body>
     <header class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -136,11 +74,11 @@
                 <div class="row">
                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                         <div class="reg-signup-wrapper">
-			<div id="test1"></div>
-			<div id="test2"></div>
                             <h1>See How Daocloud Will Help Your Practice Thrive</h1>
-                            <h3 class="sec-subtitle"> Discover how Daocloud will help you amplify word-of-mouth,<br> attract new clients, and build trust in the wellness community.</h3>
                         </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12"> 
+                        <h3 class="sec-subtitle">Discover how Daocloud will help you amplify word-of-mouth, attract new clients, and build trust in the wellness community.</h3>
                     </div>
                </div>  
             </div>
@@ -148,12 +86,9 @@
         <section id="reg-row2-section" class="section border-sec">
             <div class="container">
                 <form id="reg-form1" class="reg-form">
-                        <div id="" class="row">
-                        <h3 class="form-heading elem-wrapper">Fill out the form to watch your demo video
-                        <br>
-                            and check local early adopter pricing &amp; availabilty.
-                        </h3>  
-                            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 center-block inner-container clearfix">
+                        <div id="" class="row"> 
+                            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-9 center-block inner-container clearfix">
+                            <h3 class="form-heading elem-wrapper">Fill out the form to watch your demo video and check local early adopter pricing &amp; availabilty.</h3> 
                              
                             <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 elem-wrapper"> 
                                 <input type="text" name="name" placeholder="First and Last Name" id="input" class="form-control" value="" required="required" >
@@ -171,7 +106,7 @@
                                     <optgroup label="Alabama" > 
                                         <option value="BHM" >Birmingham</option>
                                         <option value="MOB" >Mobile</option> 
-                                        <option value="MGM" >Mongomery</option>
+                                        <option value="MGM" >Montgomery</option>
                                         <option value="HSV" >Tennessee Valley</option>
                                     </optgroup>
                                     <optgroup label="Alaska" > 
@@ -258,7 +193,7 @@
                                         <option value="LEX" >Lexington</option>
                                         <option value="SDF" >Louisville</option>
                                     </optgroup>                                                              
-                                    <optgroup label="Louisianna" >
+                                    <optgroup label="Louisiana" >
                                         <option value="BTR" >Baton Rouge</option>
                                       <option value="LFT" >  Lafayette</option>
                                         <option value="MSY" >New Orleans</option>
@@ -438,7 +373,7 @@
                                         <option value="CYS" >Wyoming</option>
                                     </optgroup>
                                  </select>
-				 <a class ="send-msg-reg" href="mailto:team@daocloud.com">Don't see your region?</a>
+				 <a class ="send-msg-reg" href="mailto:team@daocloud.com?Subject=I%27d%20Love%20to%20See%20Daocloud%20in%20My%20Region">Don't see your region?</a>
                              </div> 
                              <div class="frm-btn-con col-xs-4 col-sm-3 col-md-3 col-lg-3 center-block inner-container elem-wrapper">
                                  <button id="submit1" name="submit" type="submit" class="btn btn-form form-control">Start My Demo</button>  
@@ -447,8 +382,8 @@
                        </div>
                 </form>  
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row-list">
-                        <span class="listrow-txt">DaoCloud<br>Partners:</span>
+                    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-12 col-lg-12 center-block">
+                        <span class="listrow-txt">Daocloud<br>Partners:</span>
                         <img class="partners-img" src="../images/partners-greenmedinfo-logo.png" alt="">
                         <img class="partners-img" src="../images/partners-mnda-logo.png" alt="">
                         <img class="partners-img" src="../images/partners-dcanp-logo.png" alt="">
@@ -471,7 +406,7 @@
                             <span>Alabama</span>  
                             <span>Birmingham</span>
                             <span>Mobile</span> 
-                            <span>Mongomery</span>
+                            <span>Montgomery</span>
                             <span>Tennessee Valley</span>
                         </div>
 
@@ -577,7 +512,7 @@
                     </div>
                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 reg-col">
                         <div class="reg-block">
-                           <span> Louisianna</span>
+                           <span> Louisiana</span>
                             <span>Baton Rouge</span>
                           <span>  Lafayette</span>
                             <span>New Orleans</span>
@@ -666,12 +601,13 @@
                             <span>Putname County</span>
                         </div> 
                         <div class="reg-block">
-                            <span>North Carolina Asheville</span>
+                            <span>North Carolina</span>
+                            <span>Asheville</span>
                             <span>Charlotte</span>
                             <span>Fayetteville</span>
                             <span>The Triad</span>
                             <span>The Triangle</span>
-                            <span>Wimington</span>
+                            <span>Wilmington</span>
                         </div>  
                         <div class="reg-block">
                             <span>North Dakota</span>
@@ -823,7 +759,7 @@
                         <div id="" class="row">
                         <h3 class="form-heading elem-wrapper">Fill out the form to watch your demo video
                         <br>
-                            and check local early adopter pricing & availabilty.
+                            and check local early adopter pricing &amp; availabilty.
                         </h3>                        
                             <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 center-block inner-container clearfix">
                              
@@ -844,7 +780,7 @@
                                     <optgroup label="Alabama" > 
                                         <option value="BHM" >Birmingham</option>
                                         <option value="MOB" >Mobile</option> 
-                                        <option value="MGM" >Mongomery</option>
+                                        <option value="MGM" >Montgomery</option>
                                         <option value="HSV" >Tennessee Valley</option>
                                     </optgroup>
                                     <optgroup label="Alaska" > 
@@ -931,7 +867,7 @@
                                         <option value="LEX" >Lexington</option>
                                         <option value="SDF" >Louisville</option>
                                     </optgroup>                                                              
-                                    <optgroup label="Louisianna" >
+                                    <optgroup label="Louisiana" >
                                         <option value="BTR" >Baton Rouge</option>
                                       <option value="LFT" >  Lafayette</option>
                                         <option value="MSY" >New Orleans</option>
@@ -1107,11 +1043,11 @@
                                         <option value="MSN" >Madison</option>
                                         <option value="MKE" >Milwaukee</option>
                                     </optgroup>
-                                    <optgroup label="Wyoming" >
-                                        <option value="CYS" >Wyoming</option>
+                                    <optgroup label="Wyoming">
+                                        <option value="CYS">Wyoming</option>
                                     </optgroup>
                                  </select>
-				 <a class ="send-msg-reg" href="mailto:team@daocloud.com">Don't see your region?</a>
+				 <a class="send-msg-reg" href="mailto:team@daocloud.com?Subject=I%27d%20Love%20to%20See%20Daocloud%20in%20My%20Region">Don't see your region?</a>
                              </div> 
                              <div id="frm-btm-btn"class="frm-btn-con col-xs-4 col-sm-3 col-md-3 col-lg-3 center-block inner-container elem-wrapper">
                                  <button id="submit2" name'submit' type="submit" class="btn btn-form form-control">Start My Demo</button>  
@@ -1127,9 +1063,9 @@
                 <div class="row">
                     <div id="footer-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
                         <div class="footer-links">
-                           <li><a href="terms">Terms &amp; Conditions</a></li>
-                           <li><a href="privacy">Privacy Policy</a></li>
-                           <li><a href="vision">Investors</a></li>
+                           <li><a href="../terms">Terms &amp; Conditions</a></li>
+                           <li><a href="../privacy">Privacy Policy</a></li>
+                           <li><a href="../vision">Investors</a></li>
                            <li><a href="mailto:team@daocloud.com?Subject=Daocloud%2C%20I%27d%20Love%20To%20Get%20In%20Touch%20With%20You%20Guys%21">Contact Daocloud</a></li>
                         </div>            
 
@@ -1140,5 +1076,61 @@
             </div>
         </footer>
         </div>
+
+        <!--Bootstrap-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        // Posting  Email, First Name, Last Name & Region to DEV API
+        $(document).ready(function() {
+        
+        // Function to submit Data to api and redirect to relevant regions page
+        // Param: first name, last name, email and regions - data to be sent to api
+        function submitForm(firstname, lastname, email, region) {
+             // POST JSON data to API
+             $.ajax({
+                 type: "POST",
+                 url: "https://daodev.daocloud.com/api/v1/regions", 
+                 data: { email : email, firstName: firstname, lastName: lastname, region: region }
+             }).done(function(msg)
+             {
+                 if(msg=='OK'){
+                         // all went well, data was saved to infusion
+                         //we can redirect to '/demo?region=' + reg1 (/demo is the pricing results page)
+                     window.location.href="http://daocloud.com/demo/index.html?region="+region"&firstname="+firstname"&lastname="+lastname"&email="+email;
+                 }
+                 else {
+                     //something went wrong
+                    alert('We are sorry but Daocloud was unable to check the availability of early adopter pricing in your region. Please email us at team@daocloud.com to learn more about early adopter pricing.');
+                 }
+            });
+        } // End of submitForm Fucntion
+        
+            //Form 1 - Function when Submit button is clicked on the first (top) Form
+            $("#submit1").click(function(e) {
+                e.preventDefault();  // Prevents default button action
+                valName =$("#reg-form1 input[name='name']").val().split(' ');  //Stores Name
+                firstName1 = valName[0];
+                lastName1 = valName[1];
+                em1 =$('#reg-form1 input[name="email"]').val();   //Stores Email
+                reg1 = $('#reg-form1 select[name="region"]').val(); // Stores Region    
+                submitForm(firstName1, lastName1, em1, reg1);  
+            });
+        
+            //Form 2 - Fucntion when Submit button is clicked on the second (bottom) Form
+            $("#submit2").click(function(e){    
+                e.preventDefault(); // Prevents default button action
+                em2 =$('#reg-form2 input[name="email"]').val();   //Stores Email
+                valName =$("#reg-form2 input[name='name']").val().split(' ');  //Stores Name
+                firstName2 = valName[0];
+                console.log("firstName: "+ firstName2);
+                lastName2 = valName[1];
+                console.log("firstName: "+ lastName2);
+                reg2 = $('#reg-form2 select[name="region"]').val(); //Stores Region
+                submitForm(firstName2, lastName2, em2, reg2);
+            });
+        });   
+        </script>
+
     </body>
 </html>
