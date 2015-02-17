@@ -2770,6 +2770,7 @@ header.navbar {
   padding-bottom: 2px;
   text-decoration: none; /* Bootstrap override */
   transition: all .2s linear;
+  line-height: 1.4;
 }
 
 #signup-row h4 a:hover {
