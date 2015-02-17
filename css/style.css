@@ -245,7 +245,9 @@ textarea {
 
 a {
   color: #337ab7;
-  text-decoration: none; }
+  text-decoration: none; 
+  cursor: pointer;
+}
   a:hover, a:focus {
     color: #23527c;
     text-decoration: underline; }
@@ -2727,19 +2729,21 @@ header.navbar {
   text-align: center;  /* align the inline(-block) elements horizontally */
   font: 0/0 a;         /* remove the gap between inline(-block) elements */
 }
-   
-#pro-row1-section .container:before {    /* create a full-height inline block pseudo=element */
+  
+#pro-row1-section .container:before, #mem-row1-section .container:before{    /* create a full-height inline block pseudo=element */
   content: ' ';
   display: inline-block;
   vertical-align: middle;  /* vertical alignment of the inline element */
   height: 100%;
 }
     
-#pro-row1-section .container .row {
+#pro-row1-section .container .row , #mem-row1-section .container .row{
   display: inline-block;
   vertical-align: middle;
   font-family: Raleway;
   line-height: 1;      /* <-- reset the font property */
+  width: 100%;
+  margin: 0 auto;
 }
 
 #pro-row1-section #signup-row {
@@ -2941,7 +2945,10 @@ header.navbar {
   #row1-section::before {
     padding-top: 0px;
   }
-     
+  #signup-row
+  {
+	  height: initial;
+  }   
   #signup-row h2 {
     right: 4vw;
     text-align: center; 
@@ -3245,14 +3252,20 @@ header.navbar {
    background-color: #0a3153;
    font-size: 1.75vw ;
    font-weight: 600; 
-   color: white;
+   color: white !important;
    height: 58px !important;
    transition: all .2s linear;
+   text-align: center;
+   padding-top: 20px !important;
+   padding-bottom: 20px !important;
+  
 }
 
 .btn-form:hover {
   background-color: #104b7f;
   border: 2px solid #104b7f;
+  color: white !important;
+  text-decoration: none;
 }
 
 .btn-form h3 {
@@ -3567,13 +3580,13 @@ header.navbar {
 }
 
 #pricing-row3-section .reg-form .form-control {
-  padding: 12px !important;
+  padding: 18px 12px 12px 18px !important;
   border: 2px solid #0a3153;
   border-radius: 6px;
   font-size: 18px;
   width: 50%;
   height: inherit;
-  height: 55px;
+ /* height: 55px;*/
   margin: 0 auto;
 }
 
