@@ -10,17 +10,6 @@ body {
   margin: 0; }
 
 article,
-aside,/***************** DaoCloud Landing Page Stylesheet *************** */
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
-article,
 aside,
 details,
 figcaption,
@@ -2479,7 +2468,12 @@ button {
  #signup-row .btn {
    margin-top: 0px;
  }
- 
+
+ #signup-row .btn a {
+   background-color: #fff !important;
+   color: #0a3153 !important;
+ } 
+
  .btn-form {
     font-size: 12px !important;
     line-height: 1.4;
@@ -2967,6 +2961,22 @@ header.navbar {
   #propage #ftrslist-row {
     margin-left: 0;
   }
+
+  #mem-row1-section.section {
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+
+  #signup-row h4 a {
+    background-color: #fff !important;
+    border-radius: 4px;
+    color: #0a3153;
+    padding: 2px 8px;
+  }
+
+  #signup-row h4 a:hover {
+    color: #0a3153;
+  }
 }
 
 /* breakpoint just for the pro page header */
@@ -3095,7 +3105,7 @@ header.navbar {
   padding: 12px !important;
   margin: 0 auto;
   text-align: center;
-  width: 450px;
+  width: 100%;
  }
 
 .scrb-frm-ctr {
@@ -3108,7 +3118,7 @@ header.navbar {
 }
 
 #sbscrb-row .scrb-btn-ctr {
-  width: 250px;
+  width: 80%;
 }
 
 .scrb-btn-ctr .btn-row {
@@ -3128,6 +3138,14 @@ header.navbar {
 
 #ftrslist-section .ftr-list-txt {
   padding-top: 25px;
+}
+
+/* For mobile buttons */
+@media (max-width: 768px) {
+  #sbscrb-row input[type="submit"] {
+    background: #0a3153;
+    color: #fff !important;
+  }
 }
 
 /*************************************************************************/
@@ -4056,8 +4074,13 @@ footer li {
 /************************************************************************/ 
    
 @media (max-width: 768px) {
-    footer li {
-     font-size: 12px; }
+  footer li {
+     font-size: 12px; 
+  }
+
+  footer li a:hover {
+    border-bottom: none;
+  }
 }
   
 @media (max-width: 480px) {
