@@ -2966,6 +2966,7 @@ header.navbar {
   #mem-row1-section.section {
     padding-top: 0;
     padding-bottom: 35px;
+    height: 280px;
   }
 
   #signup-row h4 a {
