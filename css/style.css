@@ -2405,30 +2405,31 @@ button {
 }
 
 #signup-row .btn a {
-  border: 2px solid white;
-  border-radius: 8px;
-  color: #fff;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;  
+  color: #0a3153;
   cursor: pointer;
   display: block;
   font-size: 18px;
   font-weight: 600;
   margin: 40px auto 0px auto;
-  padding: 8px 0px;
+  padding: 12px 0px;
   text-align: center;
   transition: all .2s linear;
   width: 268px;
 }
 
+.btn-gh:hover { 
+  background-color: transparent !important;
+  color: #fff !important; 
+  text-decoration: none;
+ }
+
 #propage .btn a {
   padding-bottom: 14px;
   padding-top: 14px;
 }
-
-.btn-gh:hover { 
-  background-color: #fff !important;
-  color: #0a3153 !important; 
-  text-decoration: none;
- }
 
 /* Professional Page Button */
 .scrb-frm-ctr .btn a {
@@ -3137,7 +3138,9 @@ header.navbar {
 }
 
 #ftrslist-section .ftr-list-txt {
-  padding-top: 25px;
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* For mobile buttons */
