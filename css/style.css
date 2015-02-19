@@ -3035,7 +3035,13 @@ header.navbar {
     margin-left: 30px;
   }
 }
+@media (max-width: 769px) {
+	#sbscrb-row .em-input
+	{
+		width: 58.9vw !important;
+	}
 
+}
 @media (max-width: 550px) {
   .ftr-list-txt {
      font-size: 13px;
@@ -3046,6 +3052,9 @@ header.navbar {
   footer .footer-links {
     float: none;
     width: auto; 
+  }
+  #sbscrb-row .scrb-btn-ctr {
+  width: 60vw !important;
   }
 }
 
@@ -3073,11 +3082,12 @@ header.navbar {
   margin-top: 10px;
 }
 
-#sbscrb-row h3 {
+#sbscrb-row .heading {
   font-weight: normal;
   margin: 0vw 0vw; 
   padding-bottom: 25px;
   text-align: center;
+ 
 }
 
 #sbscrb-row .em-input { 
@@ -3091,6 +3101,7 @@ header.navbar {
   margin: 0 auto;
   text-align: center;
   width: 450px;
+
  }
 
 .scrb-frm-ctr {
@@ -3125,6 +3136,10 @@ header.navbar {
   padding-top: 25px;
 }
 
+#sbscrb-thanks
+{
+	display: none;
+}
 /*************************************************************************/
 /*********************** Pro Page Page Sytles ****************************/
 /*************************************************************************/

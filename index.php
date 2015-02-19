@@ -180,9 +180,9 @@
 					</div><!--//End of Field Group-->
 					<div style="position: absolute; left: -5000px;"><input type="text" name="b_69306ec03132e1e4026684c81_ecb723d384" tabindex="-1" value=""></div>
                                         <div class="scrb-btn-ctr elem-wrapper ">
-                                            <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-row btn-wh">		    			    
+                                            <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-row btn-wh">		
+					    <h3 id="sbscrb-thanks">Thanks for subscribing!</h3>			    		    
                                         </div>
-					<h3 id="sbscrb-thanks">Thanks for subscribing!</h3>
                                     </div>
                         </div>
                     </div>
@@ -210,28 +210,21 @@
         </div>
 
         <!--Scripts, at bottom to speed loading-->
-	
-	<!--Mail Chimp Scripts -->
 	<script>
 	function getQueryVariable(variable)
 	{
 	       var query = window.location.search.substring(1);
-	       
 	       var vars = query.split("&");
 	       for (var i=0;i<vars.length;i++) {
 	               var pair = vars[i].split("=");
-		      
 	               if(pair[0] == variable){return pair[0];}
-		       
 	       }
 	       return(false);
 	}
         $(document).ready(function() {
-		console.log("Hello");
-		if(getQueryVariable("subscribed")== 'subscribed')
+		if(getQueryVariable("subscribed"))
 		{
 			$('#sbscrb-thanks').css( "display", "block");
-		}
 		
 	});
 	</script>
